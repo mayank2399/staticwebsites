@@ -1,0 +1,59 @@
+{
+  "Manali": {
+    "image": "images/Manali.jpg",
+    "p":[
+    "Manali is a popular hill station located in the Kullu Valley of Himachal Pradesh, India.","Nestled in the Himalayas, it is known for its snow-capped peaks, lush green valleys, and pleasant climate.","It's a favorite destination for honeymooners, adventure seekers, and nature lovers.","Activities like skiing, paragliding, rafting, and trekking attract tourists all year round."
+    ],
+    "places":[
+      "Solang Valley","Rohtang Pass","Hidimba Devi Temple","Manu Temple","Vashisht Hot Water Springs","Old Manali","Jogini Waterfall","Mall Road"
+    ]
+  },
+  "Haridwar": {
+    "image": "images/Haridwar.jpg",
+    "p": [
+      "Haridwar is one of the seven holiest places in Hinduism, located in the state of Uttarakhand, India.",
+      "Situated on the banks of the sacred Ganges River, it is known for its spiritual significance and vibrant Ganga Aarti.",
+      "The city attracts millions of pilgrims and tourists who come to take a dip in the holy river and seek blessings.",
+      "Haridwar is a major destination during the Kumbh Mela, one of the largest religious gatherings in the world."
+    ],
+    "places": [
+      "Har Ki Pauri",
+      "Mansa Devi Temple",
+      "Chandi Devi Temple",
+      "Ganga Aarti",
+      "Bharat Mata Mandir",
+      "Sapt Rishi Ashram",
+      "Shantikunj"
+    ]
+  },
+  "Rishikesh": {
+    "image": "images/Rishikesh.jpg",
+    "p": [
+      "Rishikesh, known as the 'Yoga Capital of the World', is located close to Haridwar in Uttarakhand.",
+      "It's a serene town famous for yoga retreats, spiritual ashrams, and the scenic beauty of the Ganges River.",
+      "It also offers thrilling adventure activities like white-water rafting and bungee jumping."
+    ],
+    "places": [
+      "Laxman Jhula",
+      "Ram Jhula",
+      "Triveni Ghat",
+      "Parmarth Niketan",
+      "Neer Garh Waterfall"
+    ]
+  },
+  "Mussoorie": {
+    "image": "images/Mussoorie.jpg",
+    "p": [
+      "Mussoorie is a beautiful hill station in Uttarakhand, often called the 'Queen of the Hills'.",
+      "It is known for its colonial charm, panoramic views of the Doon Valley, and pleasant climate.",
+      "It attracts both leisure travelers and honeymooners alike."
+    ],
+    "places": [
+      "Kempty Falls",
+      "Gun Hill",
+      "Camel's Back Road",
+      "Lal Tibba",
+      "Mussoorie Mall Road"
+    ]
+  }
+}

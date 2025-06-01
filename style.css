@@ -1,0 +1,127 @@
+html, body {
+      height: 100vh;
+      margin: 0;
+      width: 10vh;
+      background-color: #ffffff;
+}
+.home{
+    background-image: url(images/home.jpg);
+  background-size: cover;    
+     background-position: center;  
+    background-repeat: no-repeat; 
+    height: 100vh;
+    width: 100vw;
+}
+
+.header{
+    margin: 0vh 10vw 0 0;
+    padding-top: 10vh;
+    color: white;
+    font-size: 9vh;
+}
+
+.intro{
+    margin-top: 50vh;
+    margin-left: 40vw;
+    font-size: 6vh;
+    color: whitesmoke;
+}
+
+
+.screen{
+    height: 100vh;
+    width: 100vw;
+    flex-direction: row;
+    background-color: aqua;
+    display: flex;             
+
+}
+
+.screen-img{
+        height: 100vh;
+    width: 50vw;
+}
+
+.screen-img img{
+    width: inherit;
+    height: inherit;
+}
+.screen-text{
+    background-color: bisque;
+    height: 100vh;
+    width: 50vw;
+}
+
+.location{
+    padding: 3vh 0vw 3vh 20vw;
+    color: rgb(16, 1, 1);
+    font-size: 10vh;
+}
+
+.screen-text p{
+    margin: 1vh 0 1vh 3vw;
+}
+
+.screen-text h3{
+    margin: 5vh 3vw 1vh 3vw;
+}
+
+.screen-text button{
+    margin: 5vh 5vw 5vh 5vw;
+    height: 5vh;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .home {
+    background-position: top;
+    font-size: 4vh;
+  }
+
+  .header {
+    font-size: 5vh;
+    padding-top: 5vh;
+    margin: 0 5vw;
+  }
+
+  .intro {
+    margin-top: 30vh;
+    margin-left: 5vw;
+    font-size: 3vh;
+    text-align: center;
+  }
+
+  .screen {
+    flex-direction: column;
+  }
+
+  .screen-img, .screen-text {
+    width: 100vw;
+    height: auto;
+  }
+
+  .screen-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .location {
+    padding: 2vh 5vw;
+    font-size: 5vh;
+    text-align: center;
+  }
+
+  .screen-text p, 
+  .screen-text h3, 
+  .screen-text button {
+    margin: 2vh 5vw;
+    font-size: 2vh;
+  }
+
+  .screen-text button {
+    width: 90%;
+    height: 6vh;
+  }
+
+}

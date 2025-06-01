@@ -82,8 +82,8 @@ html, body {
     .carousel-item img {
     /* height: 10vh; */
           height: 30vh;
-
-     width: 100%;
+        width: 100%;
+        max-width: inherit;
       /* height: auto; */
       display: block;
     }

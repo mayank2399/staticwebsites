@@ -81,7 +81,7 @@ html, body {
 
     .carousel-item img {
     /* height: 10vh; */
-          height: 30vh;
+          height: 30vw;
         width: 100%;
         max-width: inherit;
       /* height: auto; */

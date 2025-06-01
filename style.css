@@ -4,124 +4,126 @@ html, body {
       width: 10vh;
       background-color: #ffffff;
 }
-.home{
-    background-image: url(images/home.jpg);
-  background-size: cover;    
-     background-position: center;  
-    background-repeat: no-repeat; 
-    height: 100vh;
+
+#upper-header{
+    width: 100vw;
+       background: linear-gradient(to right, #FD7F2C, #FDB777); /* Horizontal gradient */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent; 
+      flex-direction: row;
+      display: flex; 
+}
+
+#upper-header p{
+    padding-left: 25vh;
+}
+
+.hr{
     width: 100vw;
 }
-
-.header{
-    margin: 0vh 10vw 0 0;
-    padding-top: 10vh;
-    color: white;
-    font-size: 9vh;
-}
-
-.intro{
-    margin-top: 50vh;
-    margin-left: 40vw;
-    font-size: 6vh;
-    color: whitesmoke;
+.search{
+  display: flex;
+  justify-content: space-between;
+  padding: 3vh 10vw;
+  border-width: 20px;
+  align-items: center;
+  color: black;
+  flex-wrap: wrap;
 }
 
 
-.screen{
-    height: 100vh;
-    width: 100vw;
-    flex-direction: row;
-    background-color: aqua;
-    display: flex;             
-
-}
-
-.screen-img{
-        height: 100vh;
-    width: 50vw;
-}
-
-.screen-img img{
-    width: inherit;
-    height: inherit;
-}
-.screen-text{
-    background-color: bisque;
-    height: 100vh;
-    width: 50vw;
-}
-
-.location{
-    padding: 3vh 0vw 3vh 20vw;
-    color: rgb(16, 1, 1);
-    font-size: 10vh;
-}
-
-.screen-text p{
-    margin: 1vh 0 1vh 3vw;
-}
-
-.screen-text h3{
-    margin: 5vh 3vw 1vh 3vw;
-}
-
-.screen-text button{
-    margin: 5vh 5vw 5vh 5vw;
-    height: 5vh;
-}
 
 
-@media screen and (max-width: 768px) {
 
-  .home {
-    background-position: top;
-    font-size: 4vh;
-  }
+ #carousels{
+        width: 80vw;
+        background-color: white;
+        color: rgb(0, 6, 0);
+        overflow-x: auto;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
 
-  .header {
-    font-size: 5vh;
-    padding-top: 5vh;
-    margin: 0 5vw;
-  }
+   .carousel {
+      display: flex;
+      overflow-x: auto;
+      height: 50vh;
+      gap: 1vw;
+      padding: 1vh;
+      /* background: rgb(234, 233, 233); */
+      border-radius: 10px;
+      scroll-behavior: smooth;
+    }
 
-  .intro {
-    margin-top: 30vh;
-    margin-left: 5vw;
-    font-size: 3vh;
-    text-align: center;
-  }
+    .carousel::-webkit-scrollbar {
+         padding-left: 25vh;
+      height: 8px;
+    }
 
-  .screen {
-    flex-direction: column;
-  }
+    .carousel::-webkit-scrollbar-thumb {
+         padding-left: 25vh;
+      background: #ccc;
+      border-radius: 4px;
+    }
 
-  .screen-img, .screen-text {
-    width: 100vw;
-    height: auto;
-  }
+    .carousel-item {
+      /* height: inherit; */
+      min-width: 300px;
+      flex-shrink: 0;
+      /* background: #d80404; */
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+    }
 
-  .screen-img img {
-    width: 100%;
-    height: auto;
-  }
+    .carousel-item img {
+    /* height: 10vh; */
+          height: 30vh;
 
-  .location {
-    padding: 2vh 5vw;
-    font-size: 5vh;
-    text-align: center;
-  }
+     width: 100%;
+      /* height: auto; */
+      display: block;
+    }
 
-  .screen-text p, 
-  .screen-text h3, 
-  .screen-text button {
-    margin: 2vh 5vw;
-    font-size: 2vh;
-  }
+    .carousel-item h3 {
+      margin: 2vh 0;
+      color: black;
+    }
 
-  .screen-text button {
-    width: 90%;
-    height: 6vh;
-  }
+    .carousel-item h4 {
+      margin: 2vh 0;
+      color: black;
+    }
 
-}
+    .carousel-item a {
+      display: inline-block;
+      padding: 1vh 1vw;
+      margin-bottom: 10px;
+      background: #007BFF;
+      color: rgb(235, 153, 3);
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .carousel-item a:hover {
+      background: #0056b3;
+    }
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

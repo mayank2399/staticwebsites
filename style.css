@@ -109,19 +109,99 @@ html, body {
     .carousel-item a:hover {
       background: #0056b3;
     }
-   
+
+.footer{
+  height: 20vh;
+  background-color: black;
+  width: 100vw;
+
+}
+
+.footer-element{
+  /* margin-left: 35vw; */
+  color: white;
+  padding-top: 3vh;
+    flex-direction: row;
+        display: flex; 
+         align-items: center;
+  justify-content: center;
+}
+
+.footer-element p{
+  margin: 2vh 2vw 0 0;
+  
+}
+
+.footer-image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   margin-top: 3vh;
+
+}
+
+.footer-image img{
+  width: 7vw;
+  height: 7vh;
+}
+
+.below-footer{
+  background-color: green;
+  height: 5vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
 
 
+#destination{
+   width: 100vw;
+}
+.destination-images{
+   width: 100vw;
+   height: 50vh;
+   /* margin-left: 15vw; */
+   margin-right: 0;
+   display: flex;
+   flex-direction: row;
+}
+
+.left-destination-image{
+  height: inherit;
+  margin-left: 15vw;
+  width: 50%;
+  /* padding: auto; */
+}
+
+.left-destination-image img{
+  height: inherit;
+  width: 100%;
+  /* width: 50%; */
+}
+
+.right-destination-image{
+      height: inherit;
+       width: 50%;
+          display: flex;
+   flex-direction: column;
+}
+
+.right-destination-image img{
+  height: 50%;
+  /* padding: 1vh; */
+  width: 50%;
+}
 
 
+.destination-title{
+  /* padding-left: 20vh; */
+  margin: 5vh 20vw 0 20vw;
+  font-size: 5vh;
+}
 
-
-
-
-
-
-
-
-
-
-
+.destination-title-2{
+  /* padding-left: 20vh; */
+  margin: 5vh 20vw 0 20vw;
+  font-size: 3vh;
+}

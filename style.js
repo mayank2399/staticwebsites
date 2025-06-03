@@ -1,6 +1,47 @@
- function screen(data) {
-    const sidebar = document.getElementById('carousels');
-    
+ function showDestination(data) {
+    var carousels=document.getElementById('carousels')
+    carousels.style.display='none';
+
+    const destination = document.getElementById('destination');
+
+
+    const destinationImage = document.createElement('div');
+    destinationImage.className = 'destination-images';
+
+
+    const leftDestinationImage =document.createElement('div');
+    leftDestinationImage.className ='left-destination-image';
+    const lefImg = document.createElement('img');
+    lefImg.src = data.gallery_media[0].media_urls.original;
+    leftDestinationImage.appendChild(lefImg)
+
+
+    const rightDestinationImage =document.createElement('div');
+    rightDestinationImage.className ='right-destination-image';
+    const rightImg1 = document.createElement('img');
+    rightImg1.src = data.gallery_media[1].media_urls.original;
+    rightDestinationImage.appendChild(rightImg1)
+
+    const rightImg2 = document.createElement('img');
+    rightImg2.src = data.gallery_media[2].media_urls.original;
+    rightDestinationImage.appendChild(rightImg2)
+
+
+    destinationImage.appendChild(leftDestinationImage);
+    destinationImage.appendChild(rightDestinationImage);
+
+
+    const p1 =document.createElement('p');
+    p1.className ='destination-title';
+    p1.innerText= data.name;
+
+    const p2 =document.createElement('p');
+    p2.className ='destination-title';
+    p2.innerText=data.currency +" "+data.starting_price;
+
+    destination.appendChild(destinationImage);
+    destination.appendChild(p1);
+    destination.appendChild(p2);
  }
 
 
@@ -27,7 +68,6 @@
 
             const img = document.createElement('img');
             img.src = item.gallery_media[0].media_urls.original;
-            // item['gallery_media']['media_urls'].get(0).['original'];
 
             const heading = document.createElement('h3');
             heading.textContent = item.name;
@@ -44,6 +84,12 @@
             card.appendChild(heading);
             card.appendChild(h4);
             card.appendChild(link);
+
+            card.addEventListener('click', () => {
+              showDestination(item)
+              // document.querySelectorAll('.sidebar-child').forEach(el => el.style.display = 'none');
+              //  submenu.style.display = 'block';
+            });
             carousel.appendChild(card);
           });
 

@@ -126,13 +126,13 @@ async function loadHeader(key,value){
             card.className = 'carousel-item';
 
             const img = document.createElement('img');
-            img.src = "images/rubic_cube_world.jpg";
+            img.src = "images/"+item.image;
 
             const heading = document.createElement('h3');
             heading.textContent = item.name;
 
-             const h4 = document.createElement('h4');
-            h4.textContent = item.currency +" "+item.starting_price;
+            //  const h4 = document.createElement('h4');
+            // h4.textContent = item.currency +" "+item.starting_price;
 
             const link = document.createElement('a');
             link.href = item.link;
@@ -141,7 +141,7 @@ async function loadHeader(key,value){
 
             card.appendChild(img);
             card.appendChild(heading);
-            card.appendChild(h4);
+            // card.appendChild(h4);
             card.appendChild(link);
 
             card.addEventListener('click', () => {
@@ -152,6 +152,9 @@ async function loadHeader(key,value){
 
           section.appendChild(title);
           section.appendChild(carousel);
+          const br = document.createElement('br');
+
+          section.append(br);
           container.appendChild(section);
         });
       

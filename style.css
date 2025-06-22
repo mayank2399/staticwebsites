@@ -3,7 +3,7 @@ body {
   height: 100vh;
   margin: 0;
   width: 10vh;
-  background-color: #ffffff;
+    background-color: beige;
 }
 
 #upper-header {
@@ -95,6 +95,8 @@ body {
   padding-left: 10vw;
   padding-right: 10vw;
   margin-top: 2vh;
+      background-color: beige;
+
 }
 
 .carousel {
@@ -104,6 +106,7 @@ body {
   gap: 1vw;
   border-radius: 10px;
   scroll-behavior: smooth;
+  /* margin: 10vh; */
 }
 
 .carousel::-webkit-scrollbar {

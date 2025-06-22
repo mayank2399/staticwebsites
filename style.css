@@ -7,7 +7,7 @@ html, body {
 
 #upper-header{
     width: 100vw;
-       background: linear-gradient(to right, #FD7F2C, #FDB777); /* Horizontal gradient */
+       background: linear-gradient(to right, #269BDA, #4BB649); /* Horizontal gradient */
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -16,6 +16,31 @@ html, body {
       display: flex; 
 }
 
+.horibanner {
+  width: auto;
+  height: auto;
+  align-items: center;
+   justify-content: center;
+}
+
+.horibanner video {
+  width: auto;
+  height: auto;
+  align-items: center;
+   /* justify-content: center; */
+}
+
+.horibanner img {
+  width: auto;
+  height: auto;
+  align-items: center;
+   /* justify-content: center; */
+}
+.banner{
+     /* max-width: 100%; */
+     /* width: 15vw;
+    height: 12vh; */
+}
 #upper-header p{
     padding-left: 25vh;
 }
@@ -40,7 +65,7 @@ html, body {
  #carousels{
         width: 80vw;
         background-color: white;
-        color: rgb(0, 6, 0);
+       color: linear-gradient(to right, #269BDA, #4BB649); /* Horizontal gradient */
         overflow-x: auto;
         padding-left: 10vw;
         padding-right: 10vw;
@@ -88,20 +113,24 @@ html, body {
 
     .carousel-item h3 {
       margin: 2vh 0;
-      color: black;
+      /* color: black; */
+             color: linear-gradient(to right, #269BDA, #4BB649); /* Horizontal gradient */
+
     }
 
     .carousel-item h4 {
       margin: 2vh 0;
-      color: black;
+      /* color: black; */
+                   color: linear-gradient(to right, #269BDA, #4BB649); /* Horizontal gradient */
+
     }
 
     .carousel-item a {
       display: inline-block;
       padding: 1vh 1vw;
       margin-bottom: 10px;
-      background: #007BFF;
-      color: rgb(235, 153, 3);
+      background: #269BDA;                   
+      color: rgb(14, 9, 0);
       text-decoration: none;
       border-radius: 5px;
     }
@@ -113,6 +142,8 @@ html, body {
 .footer{
   height: 20vh;
   background-color: black;
+  /* background-color: linear-gradient(to right, #269BDA, #4BB649); Horizontal gradient */
+
   width: 100vw;
 
 }

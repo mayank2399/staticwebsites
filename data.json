@@ -1,4 +1,181 @@
 {
+   
+    "North India": [
+      {
+        "name": "Gulmarg, Kashmir",
+        "summarized_duration": "4 days & 3 nights",
+        "gallery_media": [
+          {
+            "id": 101,
+            "media_urls": {
+              "original": "https://upload.wikimedia.org/wikipedia/commons/6/61/Gulmarg_snow.jpg",
+              "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/6/61/Gulmarg_snow.jpg",
+              "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Gulmarg_snow.jpg"
+            },
+            "position": 1,
+            "media_type": "image",
+            "caption": "Experience snowfall and scenic mountains in Gulmarg",
+            "tags": [],
+            "device_type": "desktop"
+          }
+        ],
+        "starting_price": 18000.0,
+        "currency": "INR"
+      },
+      {
+        "name": "Manali, Himachal Pradesh",
+        "summarized_duration": "4 days & 3 nights",
+        "gallery_media": [
+          {
+            "id": 102,
+            "media_urls": {
+              "original": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Manali_Himachal_Pradesh.jpg",
+              "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Manali_Himachal_Pradesh.jpg",
+              "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Manali_Himachal_Pradesh.jpg"
+            },
+            "position": 1,
+            "media_type": "image",
+            "caption": "Explore the lush valleys and snow-covered peaks of Manali",
+            "tags": [],
+            "device_type": "desktop"
+          }
+        ],
+        "starting_price": 15000.0,
+        "currency": "INR"
+      }
+    ],
+    "South India": [
+      {
+        "name": "Alleppey Houseboat, Kerala",
+        "summarized_duration": "2 days & 1 night",
+        "gallery_media": [
+          {
+            "id": 201,
+            "media_urls": {
+              "original": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Houseboat_on_Vembanad_Lake.jpg",
+              "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Houseboat_on_Vembanad_Lake.jpg",
+              "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Houseboat_on_Vembanad_Lake.jpg"
+            },
+            "position": 1,
+            "media_type": "image",
+            "caption": "Cruise through the calm backwaters in a traditional houseboat",
+            "tags": [],
+            "device_type": "desktop"
+          }
+        ],
+        "starting_price": 9000.0,
+        "currency": "INR"
+      },
+      {
+        "name": "Ooty, Tamil Nadu",
+        "summarized_duration": "3 days & 2 nights",
+        "gallery_media": [
+          {
+            "id": 202,
+            "media_urls": {
+              "original": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Ooty_Valley_view.jpg",
+              "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Ooty_Valley_view.jpg",
+              "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Ooty_Valley_view.jpg"
+            },
+            "position": 1,
+            "media_type": "image",
+            "caption": "Enjoy misty mornings and tea plantations in Ooty",
+            "tags": [],
+            "device_type": "desktop"
+          }
+        ],
+        "starting_price": 12000.0,
+        "currency": "INR"
+      }
+    ],
+    "West India": [
+      {
+        "name": "Goa Beach Retreat",
+        "summarized_duration": "4 days & 3 nights",
+        "gallery_media": [
+          {
+            "id": 301,
+            "media_urls": {
+              "original": "https://upload.wikimedia.org/wikipedia/commons/0/02/Goa_beach_view.jpg",
+              "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/0/02/Goa_beach_view.jpg",
+              "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Goa_beach_view.jpg"
+            },
+            "position": 1,
+            "media_type": "image",
+            "caption": "Relax on sandy beaches and enjoy vibrant nightlife",
+            "tags": [],
+            "device_type": "desktop"
+          }
+        ],
+        "starting_price": 13500.0,
+        "currency": "INR"
+      },
+      {
+        "name": "Udaipur, Rajasthan",
+        "summarized_duration": "3 days & 2 nights",
+        "gallery_media": [
+          {
+            "id": 302,
+            "media_urls": {
+              "original": "https://upload.wikimedia.org/wikipedia/commons/1/1b/The_Leela_Palace%2C_Udaipur.jpg",
+              "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/1b/The_Leela_Palace%2C_Udaipur.jpg",
+              "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/The_Leela_Palace%2C_Udaipur.jpg"
+            },
+            "position": 1,
+            "media_type": "image",
+            "caption": "Discover royal palaces, lakes, and traditional markets",
+            "tags": [],
+            "device_type": "desktop"
+          }
+        ],
+        "starting_price": 11000.0,
+        "currency": "INR"
+      }
+    ],
+    "East India": [
+      {
+        "name": "Darjeeling, West Bengal",
+        "summarized_duration": "3 days & 2 nights",
+        "gallery_media": [
+          {
+            "id": 401,
+            "media_urls": {
+              "original": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Darjeeling_view.jpg",
+              "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Darjeeling_view.jpg",
+              "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Darjeeling_view.jpg"
+            },
+            "position": 1,
+            "media_type": "image",
+            "caption": "Admire the sunrise over Kanchenjunga from Tiger Hill",
+            "tags": [],
+            "device_type": "desktop"
+          }
+        ],
+        "starting_price": 10000.0,
+        "currency": "INR"
+      },
+      {
+        "name": "Gangtok, Sikkim",
+        "summarized_duration": "4 days & 3 nights",
+        "gallery_media": [
+          {
+            "id": 402,
+            "media_urls": {
+              "original": "https://upload.wikimedia.org/wikipedia/commons/8/83/Gangtok_view_Sikkim.jpg",
+              "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/8/83/Gangtok_view_Sikkim.jpg",
+              "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Gangtok_view_Sikkim.jpg"
+            },
+            "position": 1,
+            "media_type": "image",
+            "caption": "Explore monasteries and mountain vistas in the capital of Sikkim",
+            "tags": [],
+            "device_type": "desktop"
+          }
+        ],
+        "starting_price": 13000.0,
+        "currency": "INR"
+      }
+    ],
   "Europe": [
     {
       "name": "Reethi Faru Resort, Maldives",

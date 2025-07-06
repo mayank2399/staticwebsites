@@ -1,810 +1,1298 @@
 {
   "North India": [
     {
-      "name": "Gulmarg, Kashmir",
-      "summarized_duration": "4 days & 3 nights",
-      "starting_price": 18000.0,
-      "gallery_media": [
-        {
-          "id": 4463,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Gulmarg, Kashmir",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
-    },
-    {
-      "name": "Manali, Himachal Pradesh",
-      "summarized_duration": "4 days & 3 nights",
-      "starting_price": 15000.0,
-      "gallery_media": [
-        {
-          "id": 2343,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Manali, Himachal Pradesh",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
-    },
-    {
-      "name": "Rishikesh, Uttarakhand",
-      "summarized_duration": "3 days & 2 nights",
-      "starting_price": 11000.0,
-      "gallery_media": [
-        {
-          "id": 404,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Rishikesh, Uttarakhand",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
-    },
-    {
-      "name": "Jaipur, Rajasthan",
-      "summarized_duration": "3 days & 2 nights",
-      "starting_price": 12000.0,
-      "gallery_media": [
-        {
-          "id": 1250,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Jaipur, Rajasthan",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
-    },
-    {
-      "name": "Shimla, Himachal Pradesh",
-      "summarized_duration": "3 days & 2 nights",
-      "starting_price": 13000.0,
-      "gallery_media": [
-        {
-          "id": 4737,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Shimla, Himachal Pradesh",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
-    },
-    {
-      "name": "Amritsar, Punjab",
-      "summarized_duration": "2 days & 1 night",
-      "starting_price": 9000.0,
-      "gallery_media": [
-        {
-          "id": 3644,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Amritsar, Punjab",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
-    },
-    {
-      "name": "Leh-Ladakh",
+      "name": "Leh-Ladakh (J&K)",
       "summarized_duration": "5 days & 4 nights",
       "starting_price": 22000.0,
-      "gallery_media": [
-        {
-          "id": 4938,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Leh-Ladakh",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
+      "best_time_to_visit": "October to March",
+      "famous_for": [
+        "Culture",
+        "Heritage",
+        "Local Cuisine"
+      ],
+      "local_food": [
+        "Regional Specialties",
+        "Street Food",
+        "Traditional Desserts"
+      ],
+      "itinerary": [
+        "Day 1: Arrival and sightseeing",
+        "Day 2: Local tour and cultural experience",
+        "Day 3: Free time and departure"
+      ],
+      "inclusions": [
+        "Hotel Stay",
+        "Daily Breakfast",
+        "Local Transfers",
+        "Sightseeing with Guide"
+      ],
+      "exclusions": [
+        "Personal Expenses",
+        "Entry Tickets (if any)",
+        "Meals other than specified"
+      ],
+      "nearby_attractions": [
+        "Local Museums",
+        "Heritage Sites",
+        "Shopping Markets"
+      ],
+      "customer_reviews": [
+        "⭐⭐⭐⭐⭐ Great experience! – Traveler A",
+        "⭐⭐⭐⭐ Wonderful trip with amazing food. – Traveler B"
+      ],
+      "travel_options": {
+        "by_air": "Nearest Airport",
+        "by_train": "Nearest Railway Station",
+        "by_road": "Well-connected by highways and buses"
+      }
     },
     {
-      "name": "Dharamshala, Himachal Pradesh",
-      "summarized_duration": "3 days & 2 nights",
-      "starting_price": 12500.0,
-      "gallery_media": [
-        {
-          "id": 4674,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Dharamshala, Himachal Pradesh",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
-    },
-    {
-      "name": "Mussoorie, Uttarakhand",
-      "summarized_duration": "3 days & 2 nights",
-      "starting_price": 11500.0,
-      "gallery_media": [
-        {
-          "id": 5596,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Mussoorie, Uttarakhand",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
-    },
-    {
-      "name": "Kaza, Spiti Valley",
+      "name": "Shimla-Manali (Himachal Pradesh)",
       "summarized_duration": "4 days & 3 nights",
-      "starting_price": 20000.0,
-      "gallery_media": [
-        {
-          "id": 4929,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Kaza, Spiti Valley",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
+      "starting_price": 16000.0,
+      "best_time_to_visit": "October to March",
+      "famous_for": [
+        "Culture",
+        "Heritage",
+        "Local Cuisine"
+      ],
+      "local_food": [
+        "Regional Specialties",
+        "Street Food",
+        "Traditional Desserts"
+      ],
+      "itinerary": [
+        "Day 1: Arrival and sightseeing",
+        "Day 2: Local tour and cultural experience",
+        "Day 3: Free time and departure"
+      ],
+      "inclusions": [
+        "Hotel Stay",
+        "Daily Breakfast",
+        "Local Transfers",
+        "Sightseeing with Guide"
+      ],
+      "exclusions": [
+        "Personal Expenses",
+        "Entry Tickets (if any)",
+        "Meals other than specified"
+      ],
+      "nearby_attractions": [
+        "Local Museums",
+        "Heritage Sites",
+        "Shopping Markets"
+      ],
+      "customer_reviews": [
+        "⭐⭐⭐⭐⭐ Great experience! – Traveler A",
+        "⭐⭐⭐⭐ Wonderful trip with amazing food. – Traveler B"
+      ],
+      "travel_options": {
+        "by_air": "Nearest Airport",
+        "by_train": "Nearest Railway Station",
+        "by_road": "Well-connected by highways and buses"
+      }
+    },
+    {
+      "name": "Amritsar (Punjab)",
+      "summarized_duration": "2 days & 1 night",
+      "starting_price": 9000.0,
+      "best_time_to_visit": "October to March",
+      "famous_for": [
+        "Culture",
+        "Heritage",
+        "Local Cuisine"
+      ],
+      "local_food": [
+        "Regional Specialties",
+        "Street Food",
+        "Traditional Desserts"
+      ],
+      "itinerary": [
+        "Day 1: Arrival and sightseeing",
+        "Day 2: Local tour and cultural experience",
+        "Day 3: Free time and departure"
+      ],
+      "inclusions": [
+        "Hotel Stay",
+        "Daily Breakfast",
+        "Local Transfers",
+        "Sightseeing with Guide"
+      ],
+      "exclusions": [
+        "Personal Expenses",
+        "Entry Tickets (if any)",
+        "Meals other than specified"
+      ],
+      "nearby_attractions": [
+        "Local Museums",
+        "Heritage Sites",
+        "Shopping Markets"
+      ],
+      "customer_reviews": [
+        "⭐⭐⭐⭐⭐ Great experience! – Traveler A",
+        "⭐⭐⭐⭐ Wonderful trip with amazing food. – Traveler B"
+      ],
+      "travel_options": {
+        "by_air": "Nearest Airport",
+        "by_train": "Nearest Railway Station",
+        "by_road": "Well-connected by highways and buses"
+      }
+    },
+    {
+      "name": "Rishikesh–Haridwar (Uttarakhand)",
+      "summarized_duration": "3 days & 2 nights",
+      "starting_price": 11000.0,
+      "best_time_to_visit": "October to March",
+      "famous_for": [
+        "Culture",
+        "Heritage",
+        "Local Cuisine"
+      ],
+      "local_food": [
+        "Regional Specialties",
+        "Street Food",
+        "Traditional Desserts"
+      ],
+      "itinerary": [
+        "Day 1: Arrival and sightseeing",
+        "Day 2: Local tour and cultural experience",
+        "Day 3: Free time and departure"
+      ],
+      "inclusions": [
+        "Hotel Stay",
+        "Daily Breakfast",
+        "Local Transfers",
+        "Sightseeing with Guide"
+      ],
+      "exclusions": [
+        "Personal Expenses",
+        "Entry Tickets (if any)",
+        "Meals other than specified"
+      ],
+      "nearby_attractions": [
+        "Local Museums",
+        "Heritage Sites",
+        "Shopping Markets"
+      ],
+      "customer_reviews": [
+        "⭐⭐⭐⭐⭐ Great experience! – Traveler A",
+        "⭐⭐⭐⭐ Wonderful trip with amazing food. – Traveler B"
+      ],
+      "travel_options": {
+        "by_air": "Nearest Airport",
+        "by_train": "Nearest Railway Station",
+        "by_road": "Well-connected by highways and buses"
+      }
+    },
+    {
+      "name": "Varanasi (U.P.)",
+      "summarized_duration": "3 days & 2 nights",
+      "starting_price": 10000.0,
+      "best_time_to_visit": "October to March",
+      "famous_for": [
+        "Culture",
+        "Heritage",
+        "Local Cuisine"
+      ],
+      "local_food": [
+        "Regional Specialties",
+        "Street Food",
+        "Traditional Desserts"
+      ],
+      "itinerary": [
+        "Day 1: Arrival and sightseeing",
+        "Day 2: Local tour and cultural experience",
+        "Day 3: Free time and departure"
+      ],
+      "inclusions": [
+        "Hotel Stay",
+        "Daily Breakfast",
+        "Local Transfers",
+        "Sightseeing with Guide"
+      ],
+      "exclusions": [
+        "Personal Expenses",
+        "Entry Tickets (if any)",
+        "Meals other than specified"
+      ],
+      "nearby_attractions": [
+        "Local Museums",
+        "Heritage Sites",
+        "Shopping Markets"
+      ],
+      "customer_reviews": [
+        "⭐⭐⭐⭐⭐ Great experience! – Traveler A",
+        "⭐⭐⭐⭐ Wonderful trip with amazing food. – Traveler B"
+      ],
+      "travel_options": {
+        "by_air": "Nearest Airport",
+        "by_train": "Nearest Railway Station",
+        "by_road": "Well-connected by highways and buses"
+      }
+    },
+    {
+      "name": "Jaipur (Rajasthan)",
+      "summarized_duration": "3 days & 2 nights",
+      "starting_price": 12000.0,
+      "best_time_to_visit": "October to March",
+      "famous_for": [
+        "Culture",
+        "Heritage",
+        "Local Cuisine"
+      ],
+      "local_food": [
+        "Regional Specialties",
+        "Street Food",
+        "Traditional Desserts"
+      ],
+      "itinerary": [
+        "Day 1: Arrival and sightseeing",
+        "Day 2: Local tour and cultural experience",
+        "Day 3: Free time and departure"
+      ],
+      "inclusions": [
+        "Hotel Stay",
+        "Daily Breakfast",
+        "Local Transfers",
+        "Sightseeing with Guide"
+      ],
+      "exclusions": [
+        "Personal Expenses",
+        "Entry Tickets (if any)",
+        "Meals other than specified"
+      ],
+      "nearby_attractions": [
+        "Local Museums",
+        "Heritage Sites",
+        "Shopping Markets"
+      ],
+      "customer_reviews": [
+        "⭐⭐⭐⭐⭐ Great experience! – Traveler A",
+        "⭐⭐⭐⭐ Wonderful trip with amazing food. – Traveler B"
+      ],
+      "travel_options": {
+        "by_air": "Nearest Airport",
+        "by_train": "Nearest Railway Station",
+        "by_road": "Well-connected by highways and buses"
+      }
+    },
+    {
+      "name": "Agra (U.P.)",
+      "summarized_duration": "2 days & 1 night",
+      "starting_price": 9500.0,
+      "best_time_to_visit": "October to March",
+      "famous_for": [
+        "Culture",
+        "Heritage",
+        "Local Cuisine"
+      ],
+      "local_food": [
+        "Regional Specialties",
+        "Street Food",
+        "Traditional Desserts"
+      ],
+      "itinerary": [
+        "Day 1: Arrival and sightseeing",
+        "Day 2: Local tour and cultural experience",
+        "Day 3: Free time and departure"
+      ],
+      "inclusions": [
+        "Hotel Stay",
+        "Daily Breakfast",
+        "Local Transfers",
+        "Sightseeing with Guide"
+      ],
+      "exclusions": [
+        "Personal Expenses",
+        "Entry Tickets (if any)",
+        "Meals other than specified"
+      ],
+      "nearby_attractions": [
+        "Local Museums",
+        "Heritage Sites",
+        "Shopping Markets"
+      ],
+      "customer_reviews": [
+        "⭐⭐⭐⭐⭐ Great experience! – Traveler A",
+        "⭐⭐⭐⭐ Wonderful trip with amazing food. – Traveler B"
+      ],
+      "travel_options": {
+        "by_air": "Nearest Airport",
+        "by_train": "Nearest Railway Station",
+        "by_road": "Well-connected by highways and buses"
+      }
     }
   ],
   "South India": [
     {
-      "name": "Alleppey Houseboat, Kerala",
-      "summarized_duration": "2 days & 1 night",
-      "starting_price": 9000.0,
-      "gallery_media": [
-        {
-          "id": 9229,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Alleppey Houseboat, Kerala",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
-    },
-    {
-      "name": "Ooty, Tamil Nadu",
-      "summarized_duration": "3 days & 2 nights",
-      "starting_price": 12000.0,
-      "gallery_media": [
-        {
-          "id": 3477,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Ooty, Tamil Nadu",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
-    },
-    {
-      "name": "Hampi, Karnataka",
-      "summarized_duration": "3 days & 2 nights",
-      "starting_price": 10500.0,
-      "gallery_media": [
-        {
-          "id": 1107,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Hampi, Karnataka",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
-    },
-    {
-      "name": "Pondicherry",
+      "name": "Munnar (Kerala)",
       "summarized_duration": "3 days & 2 nights",
       "starting_price": 11000.0,
-      "gallery_media": [
-        {
-          "id": 8521,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Pondicherry",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
+      "best_time_to_visit": "October to March",
+      "famous_for": [
+        "Culture",
+        "Heritage",
+        "Local Cuisine"
+      ],
+      "local_food": [
+        "Regional Specialties",
+        "Street Food",
+        "Traditional Desserts"
+      ],
+      "itinerary": [
+        "Day 1: Arrival and sightseeing",
+        "Day 2: Local tour and cultural experience",
+        "Day 3: Free time and departure"
+      ],
+      "inclusions": [
+        "Hotel Stay",
+        "Daily Breakfast",
+        "Local Transfers",
+        "Sightseeing with Guide"
+      ],
+      "exclusions": [
+        "Personal Expenses",
+        "Entry Tickets (if any)",
+        "Meals other than specified"
+      ],
+      "nearby_attractions": [
+        "Local Museums",
+        "Heritage Sites",
+        "Shopping Markets"
+      ],
+      "customer_reviews": [
+        "⭐⭐⭐⭐⭐ Great experience! – Traveler A",
+        "⭐⭐⭐⭐ Wonderful trip with amazing food. – Traveler B"
+      ],
+      "travel_options": {
+        "by_air": "Nearest Airport",
+        "by_train": "Nearest Railway Station",
+        "by_road": "Well-connected by highways and buses"
+      }
     },
     {
-      "name": "Mysore, Karnataka",
-      "summarized_duration": "2 days & 1 night",
-      "starting_price": 9500.0,
-      "gallery_media": [
-        {
-          "id": 6811,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Mysore, Karnataka",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
-    },
-    {
-      "name": "Coorg, Karnataka",
-      "summarized_duration": "3 days & 2 nights",
-      "starting_price": 11500.0,
-      "gallery_media": [
-        {
-          "id": 6814,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Coorg, Karnataka",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
-    },
-    {
-      "name": "Varkala, Kerala",
-      "summarized_duration": "2 days & 1 night",
-      "starting_price": 10000.0,
-      "gallery_media": [
-        {
-          "id": 2592,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Varkala, Kerala",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
-    },
-    {
-      "name": "Madurai, Tamil Nadu",
+      "name": "Alleppey (Kerala)",
       "summarized_duration": "2 days & 1 night",
       "starting_price": 9000.0,
-      "gallery_media": [
-        {
-          "id": 6474,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Madurai, Tamil Nadu",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
+      "best_time_to_visit": "October to March",
+      "famous_for": [
+        "Culture",
+        "Heritage",
+        "Local Cuisine"
+      ],
+      "local_food": [
+        "Regional Specialties",
+        "Street Food",
+        "Traditional Desserts"
+      ],
+      "itinerary": [
+        "Day 1: Arrival and sightseeing",
+        "Day 2: Local tour and cultural experience",
+        "Day 3: Free time and departure"
+      ],
+      "inclusions": [
+        "Hotel Stay",
+        "Daily Breakfast",
+        "Local Transfers",
+        "Sightseeing with Guide"
+      ],
+      "exclusions": [
+        "Personal Expenses",
+        "Entry Tickets (if any)",
+        "Meals other than specified"
+      ],
+      "nearby_attractions": [
+        "Local Museums",
+        "Heritage Sites",
+        "Shopping Markets"
+      ],
+      "customer_reviews": [
+        "⭐⭐⭐⭐⭐ Great experience! – Traveler A",
+        "⭐⭐⭐⭐ Wonderful trip with amazing food. – Traveler B"
+      ],
+      "travel_options": {
+        "by_air": "Nearest Airport",
+        "by_train": "Nearest Railway Station",
+        "by_road": "Well-connected by highways and buses"
+      }
     },
     {
-      "name": "Kodaikanal, Tamil Nadu",
+      "name": "Ooty (Tamil Nadu)",
       "summarized_duration": "3 days & 2 nights",
       "starting_price": 12000.0,
-      "gallery_media": [
-        {
-          "id": 6350,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Kodaikanal, Tamil Nadu",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
+      "best_time_to_visit": "October to March",
+      "famous_for": [
+        "Culture",
+        "Heritage",
+        "Local Cuisine"
+      ],
+      "local_food": [
+        "Regional Specialties",
+        "Street Food",
+        "Traditional Desserts"
+      ],
+      "itinerary": [
+        "Day 1: Arrival and sightseeing",
+        "Day 2: Local tour and cultural experience",
+        "Day 3: Free time and departure"
+      ],
+      "inclusions": [
+        "Hotel Stay",
+        "Daily Breakfast",
+        "Local Transfers",
+        "Sightseeing with Guide"
+      ],
+      "exclusions": [
+        "Personal Expenses",
+        "Entry Tickets (if any)",
+        "Meals other than specified"
+      ],
+      "nearby_attractions": [
+        "Local Museums",
+        "Heritage Sites",
+        "Shopping Markets"
+      ],
+      "customer_reviews": [
+        "⭐⭐⭐⭐⭐ Great experience! – Traveler A",
+        "⭐⭐⭐⭐ Wonderful trip with amazing food. – Traveler B"
+      ],
+      "travel_options": {
+        "by_air": "Nearest Airport",
+        "by_train": "Nearest Railway Station",
+        "by_road": "Well-connected by highways and buses"
+      }
     },
     {
-      "name": "Thanjavur, Tamil Nadu",
+      "name": "Mysuru (Karnataka)",
       "summarized_duration": "2 days & 1 night",
       "starting_price": 9500.0,
-      "gallery_media": [
-        {
-          "id": 1209,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Thanjavur, Tamil Nadu",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
+      "best_time_to_visit": "October to March",
+      "famous_for": [
+        "Culture",
+        "Heritage",
+        "Local Cuisine"
+      ],
+      "local_food": [
+        "Regional Specialties",
+        "Street Food",
+        "Traditional Desserts"
+      ],
+      "itinerary": [
+        "Day 1: Arrival and sightseeing",
+        "Day 2: Local tour and cultural experience",
+        "Day 3: Free time and departure"
+      ],
+      "inclusions": [
+        "Hotel Stay",
+        "Daily Breakfast",
+        "Local Transfers",
+        "Sightseeing with Guide"
+      ],
+      "exclusions": [
+        "Personal Expenses",
+        "Entry Tickets (if any)",
+        "Meals other than specified"
+      ],
+      "nearby_attractions": [
+        "Local Museums",
+        "Heritage Sites",
+        "Shopping Markets"
+      ],
+      "customer_reviews": [
+        "⭐⭐⭐⭐⭐ Great experience! – Traveler A",
+        "⭐⭐⭐⭐ Wonderful trip with amazing food. – Traveler B"
+      ],
+      "travel_options": {
+        "by_air": "Nearest Airport",
+        "by_train": "Nearest Railway Station",
+        "by_road": "Well-connected by highways and buses"
+      }
+    },
+    {
+      "name": "Hampi (Karnataka)",
+      "summarized_duration": "3 days & 2 nights",
+      "starting_price": 10500.0,
+      "best_time_to_visit": "October to March",
+      "famous_for": [
+        "Culture",
+        "Heritage",
+        "Local Cuisine"
+      ],
+      "local_food": [
+        "Regional Specialties",
+        "Street Food",
+        "Traditional Desserts"
+      ],
+      "itinerary": [
+        "Day 1: Arrival and sightseeing",
+        "Day 2: Local tour and cultural experience",
+        "Day 3: Free time and departure"
+      ],
+      "inclusions": [
+        "Hotel Stay",
+        "Daily Breakfast",
+        "Local Transfers",
+        "Sightseeing with Guide"
+      ],
+      "exclusions": [
+        "Personal Expenses",
+        "Entry Tickets (if any)",
+        "Meals other than specified"
+      ],
+      "nearby_attractions": [
+        "Local Museums",
+        "Heritage Sites",
+        "Shopping Markets"
+      ],
+      "customer_reviews": [
+        "⭐⭐⭐⭐⭐ Great experience! – Traveler A",
+        "⭐⭐⭐⭐ Wonderful trip with amazing food. – Traveler B"
+      ],
+      "travel_options": {
+        "by_air": "Nearest Airport",
+        "by_train": "Nearest Railway Station",
+        "by_road": "Well-connected by highways and buses"
+      }
+    },
+    {
+      "name": "Rameswaram (Tamil Nadu)",
+      "summarized_duration": "2 days & 1 night",
+      "starting_price": 10000.0,
+      "best_time_to_visit": "October to March",
+      "famous_for": [
+        "Culture",
+        "Heritage",
+        "Local Cuisine"
+      ],
+      "local_food": [
+        "Regional Specialties",
+        "Street Food",
+        "Traditional Desserts"
+      ],
+      "itinerary": [
+        "Day 1: Arrival and sightseeing",
+        "Day 2: Local tour and cultural experience",
+        "Day 3: Free time and departure"
+      ],
+      "inclusions": [
+        "Hotel Stay",
+        "Daily Breakfast",
+        "Local Transfers",
+        "Sightseeing with Guide"
+      ],
+      "exclusions": [
+        "Personal Expenses",
+        "Entry Tickets (if any)",
+        "Meals other than specified"
+      ],
+      "nearby_attractions": [
+        "Local Museums",
+        "Heritage Sites",
+        "Shopping Markets"
+      ],
+      "customer_reviews": [
+        "⭐⭐⭐⭐⭐ Great experience! – Traveler A",
+        "⭐⭐⭐⭐ Wonderful trip with amazing food. – Traveler B"
+      ],
+      "travel_options": {
+        "by_air": "Nearest Airport",
+        "by_train": "Nearest Railway Station",
+        "by_road": "Well-connected by highways and buses"
+      }
+    },
+    {
+      "name": "Pondicherry (UT, Tamil Nadu coast)",
+      "summarized_duration": "3 days & 2 nights",
+      "starting_price": 11000.0,
+      "best_time_to_visit": "October to March",
+      "famous_for": [
+        "Culture",
+        "Heritage",
+        "Local Cuisine"
+      ],
+      "local_food": [
+        "Regional Specialties",
+        "Street Food",
+        "Traditional Desserts"
+      ],
+      "itinerary": [
+        "Day 1: Arrival and sightseeing",
+        "Day 2: Local tour and cultural experience",
+        "Day 3: Free time and departure"
+      ],
+      "inclusions": [
+        "Hotel Stay",
+        "Daily Breakfast",
+        "Local Transfers",
+        "Sightseeing with Guide"
+      ],
+      "exclusions": [
+        "Personal Expenses",
+        "Entry Tickets (if any)",
+        "Meals other than specified"
+      ],
+      "nearby_attractions": [
+        "Local Museums",
+        "Heritage Sites",
+        "Shopping Markets"
+      ],
+      "customer_reviews": [
+        "⭐⭐⭐⭐⭐ Great experience! – Traveler A",
+        "⭐⭐⭐⭐ Wonderful trip with amazing food. – Traveler B"
+      ],
+      "travel_options": {
+        "by_air": "Nearest Airport",
+        "by_train": "Nearest Railway Station",
+        "by_road": "Well-connected by highways and buses"
+      }
     }
   ],
   "East India": [
     {
-      "name": "Darjeeling, West Bengal",
+      "name": "Darjeeling (West Bengal)",
       "summarized_duration": "3 days & 2 nights",
       "starting_price": 10000.0,
-      "gallery_media": [
-        {
-          "id": 4416,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Darjeeling, West Bengal",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
+      "best_time_to_visit": "October to March",
+      "famous_for": [
+        "Culture",
+        "Heritage",
+        "Local Cuisine"
+      ],
+      "local_food": [
+        "Regional Specialties",
+        "Street Food",
+        "Traditional Desserts"
+      ],
+      "itinerary": [
+        "Day 1: Arrival and sightseeing",
+        "Day 2: Local tour and cultural experience",
+        "Day 3: Free time and departure"
+      ],
+      "inclusions": [
+        "Hotel Stay",
+        "Daily Breakfast",
+        "Local Transfers",
+        "Sightseeing with Guide"
+      ],
+      "exclusions": [
+        "Personal Expenses",
+        "Entry Tickets (if any)",
+        "Meals other than specified"
+      ],
+      "nearby_attractions": [
+        "Local Museums",
+        "Heritage Sites",
+        "Shopping Markets"
+      ],
+      "customer_reviews": [
+        "⭐⭐⭐⭐⭐ Great experience! – Traveler A",
+        "⭐⭐⭐⭐ Wonderful trip with amazing food. – Traveler B"
+      ],
+      "travel_options": {
+        "by_air": "Nearest Airport",
+        "by_train": "Nearest Railway Station",
+        "by_road": "Well-connected by highways and buses"
+      }
     },
     {
-      "name": "Gangtok, Sikkim",
+      "name": "Gangtok (Sikkim)",
       "summarized_duration": "4 days & 3 nights",
       "starting_price": 13000.0,
-      "gallery_media": [
-        {
-          "id": 9271,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Gangtok, Sikkim",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
+      "best_time_to_visit": "October to March",
+      "famous_for": [
+        "Culture",
+        "Heritage",
+        "Local Cuisine"
+      ],
+      "local_food": [
+        "Regional Specialties",
+        "Street Food",
+        "Traditional Desserts"
+      ],
+      "itinerary": [
+        "Day 1: Arrival and sightseeing",
+        "Day 2: Local tour and cultural experience",
+        "Day 3: Free time and departure"
+      ],
+      "inclusions": [
+        "Hotel Stay",
+        "Daily Breakfast",
+        "Local Transfers",
+        "Sightseeing with Guide"
+      ],
+      "exclusions": [
+        "Personal Expenses",
+        "Entry Tickets (if any)",
+        "Meals other than specified"
+      ],
+      "nearby_attractions": [
+        "Local Museums",
+        "Heritage Sites",
+        "Shopping Markets"
+      ],
+      "customer_reviews": [
+        "⭐⭐⭐⭐⭐ Great experience! – Traveler A",
+        "⭐⭐⭐⭐ Wonderful trip with amazing food. – Traveler B"
+      ],
+      "travel_options": {
+        "by_air": "Nearest Airport",
+        "by_train": "Nearest Railway Station",
+        "by_road": "Well-connected by highways and buses"
+      }
     },
     {
-      "name": "Puri, Odisha",
+      "name": "Puri (Odisha)",
       "summarized_duration": "3 days & 2 nights",
       "starting_price": 9500.0,
-      "gallery_media": [
-        {
-          "id": 6877,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Puri, Odisha",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
+      "best_time_to_visit": "October to March",
+      "famous_for": [
+        "Culture",
+        "Heritage",
+        "Local Cuisine"
+      ],
+      "local_food": [
+        "Regional Specialties",
+        "Street Food",
+        "Traditional Desserts"
+      ],
+      "itinerary": [
+        "Day 1: Arrival and sightseeing",
+        "Day 2: Local tour and cultural experience",
+        "Day 3: Free time and departure"
+      ],
+      "inclusions": [
+        "Hotel Stay",
+        "Daily Breakfast",
+        "Local Transfers",
+        "Sightseeing with Guide"
+      ],
+      "exclusions": [
+        "Personal Expenses",
+        "Entry Tickets (if any)",
+        "Meals other than specified"
+      ],
+      "nearby_attractions": [
+        "Local Museums",
+        "Heritage Sites",
+        "Shopping Markets"
+      ],
+      "customer_reviews": [
+        "⭐⭐⭐⭐⭐ Great experience! – Traveler A",
+        "⭐⭐⭐⭐ Wonderful trip with amazing food. – Traveler B"
+      ],
+      "travel_options": {
+        "by_air": "Nearest Airport",
+        "by_train": "Nearest Railway Station",
+        "by_road": "Well-connected by highways and buses"
+      }
     },
     {
-      "name": "Bhubaneswar, Odisha",
-      "summarized_duration": "2 days & 1 night",
-      "starting_price": 8500.0,
-      "gallery_media": [
-        {
-          "id": 1,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Bhubaneswar, Odisha",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
+      "name": "Kolkata (West Bengal)",
+      "summarized_duration": "3 days & 2 nights",
+      "starting_price": 9800.0,
+      "best_time_to_visit": "October to March",
+      "famous_for": [
+        "Culture",
+        "Heritage",
+        "Local Cuisine"
+      ],
+      "local_food": [
+        "Regional Specialties",
+        "Street Food",
+        "Traditional Desserts"
+      ],
+      "itinerary": [
+        "Day 1: Arrival and sightseeing",
+        "Day 2: Local tour and cultural experience",
+        "Day 3: Free time and departure"
+      ],
+      "inclusions": [
+        "Hotel Stay",
+        "Daily Breakfast",
+        "Local Transfers",
+        "Sightseeing with Guide"
+      ],
+      "exclusions": [
+        "Personal Expenses",
+        "Entry Tickets (if any)",
+        "Meals other than specified"
+      ],
+      "nearby_attractions": [
+        "Local Museums",
+        "Heritage Sites",
+        "Shopping Markets"
+      ],
+      "customer_reviews": [
+        "⭐⭐⭐⭐⭐ Great experience! – Traveler A",
+        "⭐⭐⭐⭐ Wonderful trip with amazing food. – Traveler B"
+      ],
+      "travel_options": {
+        "by_air": "Nearest Airport",
+        "by_train": "Nearest Railway Station",
+        "by_road": "Well-connected by highways and buses"
+      }
     },
     {
-      "name": "Sundarbans, West Bengal",
+      "name": "Sundarbans (West Bengal)",
       "summarized_duration": "2 days & 1 night",
       "starting_price": 10500.0,
-      "gallery_media": [
-        {
-          "id": 7076,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Sundarbans, West Bengal",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
+      "best_time_to_visit": "October to March",
+      "famous_for": [
+        "Culture",
+        "Heritage",
+        "Local Cuisine"
+      ],
+      "local_food": [
+        "Regional Specialties",
+        "Street Food",
+        "Traditional Desserts"
+      ],
+      "itinerary": [
+        "Day 1: Arrival and sightseeing",
+        "Day 2: Local tour and cultural experience",
+        "Day 3: Free time and departure"
+      ],
+      "inclusions": [
+        "Hotel Stay",
+        "Daily Breakfast",
+        "Local Transfers",
+        "Sightseeing with Guide"
+      ],
+      "exclusions": [
+        "Personal Expenses",
+        "Entry Tickets (if any)",
+        "Meals other than specified"
+      ],
+      "nearby_attractions": [
+        "Local Museums",
+        "Heritage Sites",
+        "Shopping Markets"
+      ],
+      "customer_reviews": [
+        "⭐⭐⭐⭐⭐ Great experience! – Traveler A",
+        "⭐⭐⭐⭐ Wonderful trip with amazing food. – Traveler B"
+      ],
+      "travel_options": {
+        "by_air": "Nearest Airport",
+        "by_train": "Nearest Railway Station",
+        "by_road": "Well-connected by highways and buses"
+      }
     },
     {
-      "name": "Nalanda, Bihar",
-      "summarized_duration": "2 days & 1 night",
-      "starting_price": 7500.0,
-      "gallery_media": [
-        {
-          "id": 5796,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Nalanda, Bihar",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
+      "name": "Shillong (Meghalaya)",
+      "summarized_duration": "3 days & 2 nights",
+      "starting_price": 11000.0,
+      "best_time_to_visit": "October to March",
+      "famous_for": [
+        "Culture",
+        "Heritage",
+        "Local Cuisine"
+      ],
+      "local_food": [
+        "Regional Specialties",
+        "Street Food",
+        "Traditional Desserts"
+      ],
+      "itinerary": [
+        "Day 1: Arrival and sightseeing",
+        "Day 2: Local tour and cultural experience",
+        "Day 3: Free time and departure"
+      ],
+      "inclusions": [
+        "Hotel Stay",
+        "Daily Breakfast",
+        "Local Transfers",
+        "Sightseeing with Guide"
+      ],
+      "exclusions": [
+        "Personal Expenses",
+        "Entry Tickets (if any)",
+        "Meals other than specified"
+      ],
+      "nearby_attractions": [
+        "Local Museums",
+        "Heritage Sites",
+        "Shopping Markets"
+      ],
+      "customer_reviews": [
+        "⭐⭐⭐⭐⭐ Great experience! – Traveler A",
+        "⭐⭐⭐⭐ Wonderful trip with amazing food. – Traveler B"
+      ],
+      "travel_options": {
+        "by_air": "Nearest Airport",
+        "by_train": "Nearest Railway Station",
+        "by_road": "Well-connected by highways and buses"
+      }
     },
     {
-      "name": "Rajgir, Bihar",
+      "name": "Bodh Gaya (Bihar)",
       "summarized_duration": "2 days & 1 night",
-      "starting_price": 7800.0,
-      "gallery_media": [
-        {
-          "id": 9827,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Rajgir, Bihar",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
-    },
-    {
-      "name": "Konark, Odisha",
-      "summarized_duration": "2 days & 1 night",
-      "starting_price": 8900.0,
-      "gallery_media": [
-        {
-          "id": 1242,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Konark, Odisha",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
-    },
-    {
-      "name": "Netarhat, Jharkhand",
-      "summarized_duration": "2 days & 1 night",
-      "starting_price": 8200.0,
-      "gallery_media": [
-        {
-          "id": 9607,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Netarhat, Jharkhand",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
-    },
-    {
-      "name": "Jamshedpur, Jharkhand",
-      "summarized_duration": "2 days & 1 night",
-      "starting_price": 8800.0,
-      "gallery_media": [
-        {
-          "id": 4646,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Jamshedpur, Jharkhand",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
+      "starting_price": 9000.0,
+      "best_time_to_visit": "October to March",
+      "famous_for": [
+        "Culture",
+        "Heritage",
+        "Local Cuisine"
+      ],
+      "local_food": [
+        "Regional Specialties",
+        "Street Food",
+        "Traditional Desserts"
+      ],
+      "itinerary": [
+        "Day 1: Arrival and sightseeing",
+        "Day 2: Local tour and cultural experience",
+        "Day 3: Free time and departure"
+      ],
+      "inclusions": [
+        "Hotel Stay",
+        "Daily Breakfast",
+        "Local Transfers",
+        "Sightseeing with Guide"
+      ],
+      "exclusions": [
+        "Personal Expenses",
+        "Entry Tickets (if any)",
+        "Meals other than specified"
+      ],
+      "nearby_attractions": [
+        "Local Museums",
+        "Heritage Sites",
+        "Shopping Markets"
+      ],
+      "customer_reviews": [
+        "⭐⭐⭐⭐⭐ Great experience! – Traveler A",
+        "⭐⭐⭐⭐ Wonderful trip with amazing food. – Traveler B"
+      ],
+      "travel_options": {
+        "by_air": "Nearest Airport",
+        "by_train": "Nearest Railway Station",
+        "by_road": "Well-connected by highways and buses"
+      }
     }
   ],
   "West India": [
     {
-      "name": "Goa Beach Retreat",
-      "summarized_duration": "4 days & 3 nights",
-      "starting_price": 13500.0,
-      "gallery_media": [
-        {
-          "id": 1998,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Goa Beach Retreat",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
-    },
-    {
-      "name": "Udaipur, Rajasthan",
+      "name": "Udaipur (Rajasthan)",
       "summarized_duration": "3 days & 2 nights",
       "starting_price": 11000.0,
-      "gallery_media": [
-        {
-          "id": 3482,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Udaipur, Rajasthan",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
+      "best_time_to_visit": "October to March",
+      "famous_for": [
+        "Culture",
+        "Heritage",
+        "Local Cuisine"
+      ],
+      "local_food": [
+        "Regional Specialties",
+        "Street Food",
+        "Traditional Desserts"
+      ],
+      "itinerary": [
+        "Day 1: Arrival and sightseeing",
+        "Day 2: Local tour and cultural experience",
+        "Day 3: Free time and departure"
+      ],
+      "inclusions": [
+        "Hotel Stay",
+        "Daily Breakfast",
+        "Local Transfers",
+        "Sightseeing with Guide"
+      ],
+      "exclusions": [
+        "Personal Expenses",
+        "Entry Tickets (if any)",
+        "Meals other than specified"
+      ],
+      "nearby_attractions": [
+        "Local Museums",
+        "Heritage Sites",
+        "Shopping Markets"
+      ],
+      "customer_reviews": [
+        "⭐⭐⭐⭐⭐ Great experience! – Traveler A",
+        "⭐⭐⭐⭐ Wonderful trip with amazing food. – Traveler B"
+      ],
+      "travel_options": {
+        "by_air": "Nearest Airport",
+        "by_train": "Nearest Railway Station",
+        "by_road": "Well-connected by highways and buses"
+      }
     },
     {
-      "name": "Gir National Park, Gujarat",
-      "summarized_duration": "3 days & 2 nights",
-      "starting_price": 13000.0,
-      "gallery_media": [
-        {
-          "id": 8584,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Gir National Park, Gujarat",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
-    },
-    {
-      "name": "Mount Abu, Rajasthan",
-      "summarized_duration": "2 days & 1 night",
-      "starting_price": 9500.0,
-      "gallery_media": [
-        {
-          "id": 75,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Mount Abu, Rajasthan",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
-    },
-    {
-      "name": "Kutch, Gujarat",
+      "name": "Jaisalmer (Rajasthan)",
       "summarized_duration": "3 days & 2 nights",
       "starting_price": 12500.0,
-      "gallery_media": [
-        {
-          "id": 7120,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Kutch, Gujarat",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
+      "best_time_to_visit": "October to March",
+      "famous_for": [
+        "Culture",
+        "Heritage",
+        "Local Cuisine"
+      ],
+      "local_food": [
+        "Regional Specialties",
+        "Street Food",
+        "Traditional Desserts"
+      ],
+      "itinerary": [
+        "Day 1: Arrival and sightseeing",
+        "Day 2: Local tour and cultural experience",
+        "Day 3: Free time and departure"
+      ],
+      "inclusions": [
+        "Hotel Stay",
+        "Daily Breakfast",
+        "Local Transfers",
+        "Sightseeing with Guide"
+      ],
+      "exclusions": [
+        "Personal Expenses",
+        "Entry Tickets (if any)",
+        "Meals other than specified"
+      ],
+      "nearby_attractions": [
+        "Local Museums",
+        "Heritage Sites",
+        "Shopping Markets"
+      ],
+      "customer_reviews": [
+        "⭐⭐⭐⭐⭐ Great experience! – Traveler A",
+        "⭐⭐⭐⭐ Wonderful trip with amazing food. – Traveler B"
+      ],
+      "travel_options": {
+        "by_air": "Nearest Airport",
+        "by_train": "Nearest Railway Station",
+        "by_road": "Well-connected by highways and buses"
+      }
     },
     {
-      "name": "Pune, Maharashtra",
-      "summarized_duration": "2 days & 1 night",
-      "starting_price": 9000.0,
-      "gallery_media": [
-        {
-          "id": 8160,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Pune, Maharashtra",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
-    },
-    {
-      "name": "Mumbai, Maharashtra",
+      "name": "Mumbai (Maharashtra)",
       "summarized_duration": "3 days & 2 nights",
       "starting_price": 15000.0,
-      "gallery_media": [
-        {
-          "id": 3457,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Mumbai, Maharashtra",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
+      "best_time_to_visit": "October to March",
+      "famous_for": [
+        "Culture",
+        "Heritage",
+        "Local Cuisine"
+      ],
+      "local_food": [
+        "Regional Specialties",
+        "Street Food",
+        "Traditional Desserts"
+      ],
+      "itinerary": [
+        "Day 1: Arrival and sightseeing",
+        "Day 2: Local tour and cultural experience",
+        "Day 3: Free time and departure"
+      ],
+      "inclusions": [
+        "Hotel Stay",
+        "Daily Breakfast",
+        "Local Transfers",
+        "Sightseeing with Guide"
+      ],
+      "exclusions": [
+        "Personal Expenses",
+        "Entry Tickets (if any)",
+        "Meals other than specified"
+      ],
+      "nearby_attractions": [
+        "Local Museums",
+        "Heritage Sites",
+        "Shopping Markets"
+      ],
+      "customer_reviews": [
+        "⭐⭐⭐⭐⭐ Great experience! – Traveler A",
+        "⭐⭐⭐⭐ Wonderful trip with amazing food. – Traveler B"
+      ],
+      "travel_options": {
+        "by_air": "Nearest Airport",
+        "by_train": "Nearest Railway Station",
+        "by_road": "Well-connected by highways and buses"
+      }
     },
     {
-      "name": "Lonavala, Maharashtra",
+      "name": "Goa (Goa)",
+      "summarized_duration": "4 days & 3 nights",
+      "starting_price": 13500.0,
+      "best_time_to_visit": "October to March",
+      "famous_for": [
+        "Culture",
+        "Heritage",
+        "Local Cuisine"
+      ],
+      "local_food": [
+        "Regional Specialties",
+        "Street Food",
+        "Traditional Desserts"
+      ],
+      "itinerary": [
+        "Day 1: Arrival and sightseeing",
+        "Day 2: Local tour and cultural experience",
+        "Day 3: Free time and departure"
+      ],
+      "inclusions": [
+        "Hotel Stay",
+        "Daily Breakfast",
+        "Local Transfers",
+        "Sightseeing with Guide"
+      ],
+      "exclusions": [
+        "Personal Expenses",
+        "Entry Tickets (if any)",
+        "Meals other than specified"
+      ],
+      "nearby_attractions": [
+        "Local Museums",
+        "Heritage Sites",
+        "Shopping Markets"
+      ],
+      "customer_reviews": [
+        "⭐⭐⭐⭐⭐ Great experience! – Traveler A",
+        "⭐⭐⭐⭐ Wonderful trip with amazing food. – Traveler B"
+      ],
+      "travel_options": {
+        "by_air": "Nearest Airport",
+        "by_train": "Nearest Railway Station",
+        "by_road": "Well-connected by highways and buses"
+      }
+    },
+    {
+      "name": "Mount Abu (Rajasthan)",
       "summarized_duration": "2 days & 1 night",
-      "starting_price": 8000.0,
-      "gallery_media": [
-        {
-          "id": 5124,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Lonavala, Maharashtra",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
+      "starting_price": 9500.0,
+      "best_time_to_visit": "October to March",
+      "famous_for": [
+        "Culture",
+        "Heritage",
+        "Local Cuisine"
+      ],
+      "local_food": [
+        "Regional Specialties",
+        "Street Food",
+        "Traditional Desserts"
+      ],
+      "itinerary": [
+        "Day 1: Arrival and sightseeing",
+        "Day 2: Local tour and cultural experience",
+        "Day 3: Free time and departure"
+      ],
+      "inclusions": [
+        "Hotel Stay",
+        "Daily Breakfast",
+        "Local Transfers",
+        "Sightseeing with Guide"
+      ],
+      "exclusions": [
+        "Personal Expenses",
+        "Entry Tickets (if any)",
+        "Meals other than specified"
+      ],
+      "nearby_attractions": [
+        "Local Museums",
+        "Heritage Sites",
+        "Shopping Markets"
+      ],
+      "customer_reviews": [
+        "⭐⭐⭐⭐⭐ Great experience! – Traveler A",
+        "⭐⭐⭐⭐ Wonderful trip with amazing food. – Traveler B"
+      ],
+      "travel_options": {
+        "by_air": "Nearest Airport",
+        "by_train": "Nearest Railway Station",
+        "by_road": "Well-connected by highways and buses"
+      }
     },
     {
-      "name": "Ajanta & Ellora Caves, Maharashtra",
+      "name": "Kutch (Rann of Kutch) (Gujarat)",
+      "summarized_duration": "3 days & 2 nights",
+      "starting_price": 12500.0,
+      "best_time_to_visit": "October to March",
+      "famous_for": [
+        "Culture",
+        "Heritage",
+        "Local Cuisine"
+      ],
+      "local_food": [
+        "Regional Specialties",
+        "Street Food",
+        "Traditional Desserts"
+      ],
+      "itinerary": [
+        "Day 1: Arrival and sightseeing",
+        "Day 2: Local tour and cultural experience",
+        "Day 3: Free time and departure"
+      ],
+      "inclusions": [
+        "Hotel Stay",
+        "Daily Breakfast",
+        "Local Transfers",
+        "Sightseeing with Guide"
+      ],
+      "exclusions": [
+        "Personal Expenses",
+        "Entry Tickets (if any)",
+        "Meals other than specified"
+      ],
+      "nearby_attractions": [
+        "Local Museums",
+        "Heritage Sites",
+        "Shopping Markets"
+      ],
+      "customer_reviews": [
+        "⭐⭐⭐⭐⭐ Great experience! – Traveler A",
+        "⭐⭐⭐⭐ Wonderful trip with amazing food. – Traveler B"
+      ],
+      "travel_options": {
+        "by_air": "Nearest Airport",
+        "by_train": "Nearest Railway Station",
+        "by_road": "Well-connected by highways and buses"
+      }
+    },
+    {
+      "name": "Aurangabad (Maharashtra)",
       "summarized_duration": "2 days & 2 nights",
       "starting_price": 11500.0,
-      "gallery_media": [
-        {
-          "id": 4753,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Ajanta & Ellora Caves, Maharashtra",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
-    },
-    {
-      "name": "Nashik Vineyards, Maharashtra",
-      "summarized_duration": "2 days & 1 night",
-      "starting_price": 9800.0,
-      "gallery_media": [
-        {
-          "id": 4546,
-          "media_urls": {
-            "original": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg",
-            "focal_point_url": "https://upload.wikimedia.org/wikipedia/commons/placeholder.jpg"
-          },
-          "position": 1,
-          "media_type": "image",
-          "caption": "Scenic view of Nashik Vineyards, Maharashtra",
-          "tags": [],
-          "device_type": "desktop"
-        }
-      ]
+      "best_time_to_visit": "October to March",
+      "famous_for": [
+        "Culture",
+        "Heritage",
+        "Local Cuisine"
+      ],
+      "local_food": [
+        "Regional Specialties",
+        "Street Food",
+        "Traditional Desserts"
+      ],
+      "itinerary": [
+        "Day 1: Arrival and sightseeing",
+        "Day 2: Local tour and cultural experience",
+        "Day 3: Free time and departure"
+      ],
+      "inclusions": [
+        "Hotel Stay",
+        "Daily Breakfast",
+        "Local Transfers",
+        "Sightseeing with Guide"
+      ],
+      "exclusions": [
+        "Personal Expenses",
+        "Entry Tickets (if any)",
+        "Meals other than specified"
+      ],
+      "nearby_attractions": [
+        "Local Museums",
+        "Heritage Sites",
+        "Shopping Markets"
+      ],
+      "customer_reviews": [
+        "⭐⭐⭐⭐⭐ Great experience! – Traveler A",
+        "⭐⭐⭐⭐ Wonderful trip with amazing food. – Traveler B"
+      ],
+      "travel_options": {
+        "by_air": "Nearest Airport",
+        "by_train": "Nearest Railway Station",
+        "by_road": "Well-connected by highways and buses"
+      }
     }
   ]
 }

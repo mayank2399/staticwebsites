@@ -1,0 +1,23 @@
+#practice-div{
+    text-align: center;
+    background-color: blanchedalmond;
+    /* padding: 20vh; */
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px rgb(0,0,0,0.5);
+    width: 70vw;
+    margin-left: 15vw;
+}
+
+.scramble{
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.timer{
+    font-size: 3.0em;
+    margin: 20px 0;
+}
+
+.buttons{
+    margin: 20px 0;
+}

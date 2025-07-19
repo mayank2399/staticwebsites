@@ -1,103 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WanderWings</title>
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mayank Sinha | Portfolio</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #333;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .contact a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #0066cc;
+    }
+    .skills span {
+      background: #ddd;
+      padding: 5px 10px;
+      margin: 5px;
+      display: inline-block;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #fff;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
 </head>
-
 <body>
-    <div id="upper-header">
-        <img class="banner" src="images/banner.png">
-        <p>WanderWings</p>
-        <!-- <div id="search">Search your destination</div> -->
+
+  <header>
+    <h1>Mayank Sinha</h1>
+    <p>Software Developer | Java | Spring Boot | Microservices</p>
+    <div class="contact">
+      <a href="mailto:mayanksinha2399@gmail.com">📧 Email</a>
+      <a href="https://www.linkedin.com/in/mayank-sinha-b85309189" target="_blank">🔗 LinkedIn</a>
+      <a href="https://github.com/mayank2399" target="_blank">💻 GitHub</a>
+    <a href="tel:+919210237578">📞 Call Me</a>
     </div>
-    <hr class="hr">
-    <div id="upper-header">
-        <p>All</p>
-        <p>Europe</p>
-        <p>Thailand</p>
-        <p>India</p>
+  </header>
 
-    </div>
-    <hr class="hr">
+  <div class="container">
+    <section>
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>Java</span><span>Spring Boot</span><span>Hibernate</span><span>Microservices</span>
+        <span>SQL</span><span>BigQuery</span><span>Data Structures</span><span>Algorithms</span><span>System Design</span>
+      </div>
+    </section>
 
-    <div class="horibanner" id="horibanner1">
-        <video width="320" height="240" controls>
-            <source src="images/video.mp4" type="video/mp4">
-         </video>
-        <!-- <img src="images/horibanner.jpg"> -->
-    </div>
-    <div id="carousels"></div>
+    <section>
+      <h2>Experience</h2>
+      <h3>Quarks Technosoft (Aug 2023 – Present)</h3>
+      <ul>
+        <li>Design, develop and deploy applications from requirements.</li>
+        <li>Ensure 24x7 application uptime.</li>
+        <li>Manage and execute assigned projects.</li>
+      </ul>
 
-    <div id="destination"></div>
+      <h3>Nspire Automation Pvt. Ltd. (Oct 2020 – Aug 2023)</h3>
+      <p><em>Recognized as “Multitasker” in 2022.</em></p>
+      <ul>
+        <li>Built and maintained software with Java, Spring Boot, Microservices.</li>
+        <li>Integrated security, scalability, and performance optimizations.</li>
+        <li>Led cross-functional collaboration and project delivery.</li>
+      </ul>
+    </section>
 
+    <section>
+      <h2>Industrial Projects</h2>
+      <ul>
+        <li><strong>Airlinq Product Catalogue:</strong> Centralized product management, lifecycle/versioning, and BSS/OSS integration.</li>
+        <li><strong>Data Ingestion System:</strong> ETL tool with transformation, monitoring, and logging for large data volumes.</li>
+        <li><strong>Inventory System:</strong> Live inventory tracking on AWS, Azure, GCP using Spring Boot.</li>
+        <li><strong>Tag Management:</strong> Automated tagging of cloud resources with Java microservices.</li>
+        <li><strong>Cost Monitoring:</strong> Track cloud resource usage and costs.</li>
+        <li><strong>Resource Utilization:</strong> Monitor CPU, memory, disk, and network metrics.</li>
+      </ul>
+    </section>
 
+    <section>
+      <h2>Personal Projects</h2>
+      <ul>
+        <li><strong>Financial Dashboard:</strong> Track mutual funds, NAVs, and daily expenses.</li>
+        <li><strong>E-commerce Website:</strong> A generic e-commerce template for multiple clients.</li>
+        <li><strong>Library Management</strong>An application developed in spring boot for managing all the user and book info in library.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li><strong>B.Tech – Krishna Engineering College (2017–2021):</strong> 82%, NPTEL Certified in Algorithms, Coding contest winner.</li>
+        <li><strong>12th – Sardar Patel Public Sr. Sec. School (CBSE, 2017):</strong> 74.4%</li>
+        <li><strong>10th – Little Star Public Sec. School (CBSE, 2015):</strong> 8.8 CGPA</li>
+      </ul>
+    </section>
+  </div>
 
-    <div class="horibanner" id="horibanner2">
-        <img src="images/horibanner.jpg">
-    </div>
+  <footer>
+    &copy; 2025 Mayank Sinha | Software developer
+  </footer>
 
-    <div class="cta">
-        <div class="cta-sides"></div>
-        <div class="cta-section">
-            <div>
-                <h2>Ready to Explore with Wander Wings?</h2>
-                <p>Unforgettable journeys are just a click away.</p>
-            </div>
-        </div>
-        <div class="cta-sides"></div>
-    </div>
-
-
-    <footer class="footer-section">
-        <div class="footer-container">
-            <div class="footer-about">
-                <h3>Wander Wings</h3>
-                <p>At Wander Wings, we craft unforgettable travel experiences across the globe. From serene getaways to
-                    adrenaline-packed adventures, we help you spread your wings and explore the world your way.</p>
-                <div class="social-icons">
-                    <a href="#"><img src="images/fb.jpg" alt="Facebook" /></a>
-                    <a href="#"><img src="images/instagram.jpg" alt="Instagram" /></a>
-                </div>
-            </div>
-
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Destinations</a></li>
-                    <li><a href="#">Travel Packages</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-resources">
-                <h4>Resources</h4>
-                <ul>
-                    <li><a href="#">Travel Blog</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">FAQs</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-contact">
-                <h4>Contact Us</h4>
-                <p>123 Wander Lane, Adventure City, India</p>
-                <p>Phone: +91-8810201112</p>
-                <p>Email: wanderwings@gmail.com</p>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2025 Wander Wings. All Rights Reserved.</p>
-        </div>
-    </footer>
 </body>
-<script src="style.js"></script>
-
 </html>

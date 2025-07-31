@@ -1,21 +1,21 @@
 {
   "firstName": "Mayank",
   "name": "MayankSinha",
-  "email":"mayanksinha2399@gmail.com",
-  "location":"Karawal nagar,Delhi-110094,India",
+  "email": "mayanksinha2399@gmail.com",
+  "location": "Karawal nagar,Delhi-110094,India",
   "introMessage1": "I'm Mayank Sinha, a Java Developer with 5 years of experience building robust, scalable, and high-performance backend systems and enterprise applications.",
   "introMessage2": "I specialize in Java, Spring Boot, Hibernate, RESTful APIs, and SQL databases. Over the years, I've contributed to full software development lifecycles—from architecture and design to deployment and optimization—helping teams deliver clean, maintainable code in fast-paced environments.",
-  "introMessage3": "I'm passionate about writing efficient backend services, system design, and integrating modern DevOps practices like CI/CD and containerization with Docker and Kubernetes. Outside of work, I enjoy exploring new technologies, contributing to open-source projects, and learning about system architecture and software craftsmanship.",
+  "introMessage3": "I'm passionate about writing efficient backend services, system design.",
   "experiences": [
     {
-      "title": "Internship at @AWS Cloud Foundation",
-      "date": "June 2025 - Aug 2025",
-      "description": "Worked on AWS services, cloud deployment, and automation. Gained hands-on experience with cloud infrastructure and DevOps practices."
+      "title": "Software Developer @Quarks Technosoft Pvt Ltd",
+      "date": "Aug 2023 - Present",
+      "description": "Worked as a JAVA developer and delivered multiple projects for client. Also learn depth knowledge of software desigining and Development."
     },
     {
-      "title": "Internship at @AWS Cloud Foundation",
-      "date": "June 2025 - Aug 2025",
-      "description": "Worked on AWS services, cloud deployment, and automation. Gained hands-on experience with cloud infrastructure and DevOps practices."
+      "title": "Software Developer @ Nspire Automation Pvt. Ltd.",
+      "date": "Oct 2020 – Aug 2023",
+      "description": "Built and maintained software with Java, Spring Boot, Microservices.Integrated security, scalability, and performance optimizations.Led cross-functional collaboration and project delivery"
     }
   ],
   "technology": {
@@ -30,29 +30,41 @@
       },
       {
         "src": "",
-        "name": "JAVA1"
+        "name": "Microservices"
       },
       {
         "src": "",
-        "name": "JAVA2"
+        "name": "Hibernate"
+      },
+      {
+        "src": "",
+        "name": "Kafka Integration"
+      },
+      {
+        "src": "",
+        "name": "JUnit 5"
+      },
+      {
+        "src": "",
+        "name": "Mockito"
+      },
+      {
+        "src": "",
+        "name": "MockMvc "
+      },
+      {
+        "src": "",
+        "name": "Design Patterns"
       }
     ],
     "Tools": [
       {
         "src": "",
-        "name": "JAVA3"
+        "name": "Git"
       },
       {
         "src": "",
-        "name": "Spring Boot"
-      },
-      {
-        "src": "",
-        "name": "JAVA4"
-      },
-      {
-        "src": "",
-        "name": "JAVA5"
+        "name": "MySQL"
       }
     ]
   },

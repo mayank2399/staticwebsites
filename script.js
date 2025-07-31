@@ -1,5 +1,17 @@
 // const { createElement } = require("react");
+const streamContainers = document.getElementsByClassName('stream');
+const binary = ['0', '1'];
+const count = 150;
 
+for (const streamContainer of streamContainers) {
+  for (let i = 0; i < count; i++) {
+    const span = document.createElement('span');
+    span.textContent = binary[Math.floor(Math.random() * binary.length)];
+    span.style.left = Math.random() * 100 + 'vw';
+    span.style.animationDelay = Math.random() * 5 + 's';
+    streamContainer.appendChild(span);
+  }
+}
 fetch("data.json")
   .then((response) => response.json())
   .then((data) => dataPopulate(data));

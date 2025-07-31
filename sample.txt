@@ -1,0 +1,28 @@
+<!-- Tech Stack Badges -->
+                        <div class="flex flex-wrap gap-3 mb-4">
+                            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                                    alt="React" class="w-4 h-4" />
+                                React
+                            </span>
+                            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                                    alt="Tailwind CSS" class="w-4 h-4" />
+                                Tailwind CSS
+                            </span>
+                            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/markdown/markdown-original.svg"
+                                    alt="Markdown" class="w-4 h-4" />
+                                Markdown
+                            </span>
+                            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg"
+                                    alt="Netlify" class="w-4 h-4" />
+                                Netlify
+                            </span>
+                            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vite/vite-original.svg"
+                                    alt="Vite" class="w-4 h-4" />
+                                Vite
+                            </span>
+                        </div>

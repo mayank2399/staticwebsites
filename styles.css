@@ -1,0 +1,460 @@
+/* Reset & basic setup */
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Special Gothic Expanded One", sans-serif; 
+    background-color: #000;
+    color: #fff;
+    overflow: -moz-scrollbars-none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer 10+ */
+    scrollbar-width: none; /* For Firefox */
+    /* scroll-behavior: smooth; */
+  }
+  
+  /* Hide scrollbar for all browsers */
+  body::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+  
+  /* Hide scrollbar for all elements */
+  *::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+  
+  /* Hide scrollbar for Firefox */
+  * {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer 10+ */
+  }
+  
+  /* Hide scrollbar for specific elements that might have scrollbars */
+  html::-webkit-scrollbar,
+  .container::-webkit-scrollbar,
+  .container-fluid::-webkit-scrollbar,
+  section::-webkit-scrollbar,
+  div::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Ensure smooth scrolling is enabled */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Additional scrollbar hiding for specific elements */
+  .code-box::-webkit-scrollbar,
+  .project-card::-webkit-scrollbar,
+  .upcoming-card::-webkit-scrollbar,
+  .journey-card::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Custom scroll indicator styling */
+  #scroll-indicator {
+    position: relative;
+    z-index: 1000;
+  }
+  
+  /* Ensure no scrollbars appear on any scrollable content */
+  .overflow-auto::-webkit-scrollbar,
+  .overflow-scroll::-webkit-scrollbar,
+  .overflow-y-auto::-webkit-scrollbar,
+  .overflow-x-auto::-webkit-scrollbar {
+    display: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  /* Loading screen */
+#loading {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* Font and base letter style */
+.loading-text span {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-size: 120px;
+  color: rgba(255, 255, 255, 0.1);
+  position: relative;
+  display: inline-block;
+  opacity: 0;
+}
+
+/* Glowing overlay */
+.loading-text span::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #1DCD9F;
+  opacity: 0;
+}
+
+/*   Introduction */
+
+#introduction{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+
+.nameHolder {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: default;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #1DCD9F;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Special Gothic Expanded One", sans-serif;
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s ease;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+
+/* Trigger hover effect */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}
+
+
+
+.shadow__btn {
+  /* margin-top: 120px; */
+  padding: 8px 18px;
+  border: none;
+  font-size: 0.9rem;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  background: rgb(0, 140, 255);
+  box-shadow: 0 0 20px rgb(0, 140, 255);
+  text-decoration: none;
+}
+
+.shadow__btn:hover {
+  box-shadow: 0 0 5px rgb(0, 140, 255),
+              0 0 25px rgb(0, 140, 255),
+              0 0 50px rgb(0, 140, 255),
+              0 0 100px rgb(0, 140, 255);
+}
+
+ #about i{
+    font-size: 30px;
+  }
+.about-section {
+  background-color: #000000;
+  color: #ffffff;
+  padding-top: 5rem;  /* Equivalent to py-20 */
+  padding-bottom: 5rem;
+  padding-left: 1.5rem;  /* Equivalent to px-6 */
+  padding-right: 1.5rem;
+}
+
+.about-container {
+  max-width: 96rem;            /* Same as Tailwind's max-w-6xl */
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: column;      /* Always column layout */
+  align-items: center;         /* Center children horizontally */
+  justify-content: center;     /* Center content vertically (within container height) */
+  text-align: center;
+
+  gap: 2.5rem;                 /* Equivalent to Tailwind's gap-10 (~40px) */
+  padding-left: 1rem;          /* px-4 */
+  padding-right: 1rem;
+}
+
+
+
+.profile-image {
+  flex-shrink: 0;
+  width: 16rem;  /* 64 */
+  height: 16rem;
+  border-radius: 0.75rem;  /* rounded-xl */
+  /* overflow: hidden; */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* shadow-lg */
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
+
+.profile-image:hover {
+  filter: grayscale(0%);
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.journey-section {
+  background-color: #000000;
+  color: #ffffff;
+  padding-top: 5rem;  /* py-20 */
+  padding-bottom: 5rem;
+  padding-left: 1.5rem; /* px-6 */
+  padding-right: 1.5rem;
+}
+
+.journey-container {
+  max-width: 96rem;  /* Tailwind's max-w-6xl */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.journey-title {
+  font-size: 2.25rem;   /* text-4xl */
+  font-weight: bold;
+  margin-bottom: 4rem;  /* mb-16 */
+  text-align: center;
+  color: #1DCD9F;
+}
+
+.timeline-wrapper {
+  position: relative;
+  padding: 2rem 0;
+  min-height: 200px; /* optional: just to help you see it while empty */
+}
+
+.vertical-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background-color: #1DCD9F;
+}
+
+
+
+.timeline-wrapper {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.vertical-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background-color: #1DCD9F;
+  z-index: 1;
+}
+
+.timeline-entry {
+  position: relative;
+  margin-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1rem;
+  height: 1rem;
+  background-color: #1DCD9F;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.timeline-card {
+  background-color: #111;
+  border: 1px solid #1DCD9F;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(29, 205, 159, 0.3);
+  max-width: 600px;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.timeline-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1DCD9F;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-date {
+  font-size: 0.875rem;
+  color: #aaa;
+}
+
+.timeline-description {
+  margin-top: 0.5rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+#techstack i {
+    font-size: 50px;
+  }
+  
+#tech-stack,#blog{
+  height: 100vh;
+}
+
+
+/* Mobile (phones < 640px) */
+@media (max-width: 639px) {
+  .about-container,
+  .journey-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .profile-image {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .timeline-card {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .timeline-entry {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-dot {
+    top: 0.5rem;
+  }
+
+  .timeline-title {
+    font-size: 1.1rem;
+  }
+
+  .timeline-description {
+    font-size: 0.875rem;
+  }
+
+  .journey-title {
+    font-size: 1.75rem;
+  }
+
+  .loading-text span {
+    font-size: 60px;
+  }
+
+  .button {
+    --fs-size: 1.5em;
+  }
+}
+
+/* Tablets (640px–1024px) */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .profile-image {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  .timeline-card {
+    max-width: 80%;
+  }
+
+  .journey-title {
+    font-size: 2rem;
+  }
+
+  .loading-text span {
+    font-size: 90px;
+  }
+}
+
+/* Desktops (>= 1024px) */
+@media (min-width: 1024px) {
+  .about-container {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .timeline-entry {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .timeline-card {
+    text-align: left;
+  }
+
+  .journey-title {
+    font-size: 2.25rem;
+  }
+}

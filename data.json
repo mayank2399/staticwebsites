@@ -1,158 +1,95 @@
 {
-  "2X2 Rubic Cube": [
+  "firstName": "Mayank",
+  "name": "MayankSinha",
+  "email":"mayanksinha2399@gmail.com",
+  "location":"Karawal nagar,Delhi-110094,India",
+  "introMessage1": "I'm Mayank Sinha, a Java Developer with 5 years of experience building robust, scalable, and high-performance backend systems and enterprise applications.",
+  "introMessage2": "I specialize in Java, Spring Boot, Hibernate, RESTful APIs, and SQL databases. Over the years, I've contributed to full software development lifecycles—from architecture and design to deployment and optimization—helping teams deliver clean, maintainable code in fast-paced environments.",
+  "introMessage3": "I'm passionate about writing efficient backend services, system design, and integrating modern DevOps practices like CI/CD and containerization with Docker and Kubernetes. Outside of work, I enjoy exploring new technologies, contributing to open-source projects, and learning about system architecture and software craftsmanship.",
+  "experiences": [
     {
-      "name": "Beginner Cubing",
-      "image": "2X2RubicCube.jpg",
-      "child links": []
+      "title": "Internship at @AWS Cloud Foundation",
+      "date": "June 2025 - Aug 2025",
+      "description": "Worked on AWS services, cloud deployment, and automation. Gained hands-on experience with cloud infrastructure and DevOps practices."
     },
     {
-      "name": "Pattern",
-      "image": "2X2RubicCube.jpg",
-      "child links": []
-    },
-    {
-      "name": "Custom design",
-      "image": "2X2RubicCube.jpg",
-      "child links": []
-    }, {
-      "name": "Intermediate Cubing",
-      "image": "2X2RubicCube.jpg",
-      "child links": []
-    },
-     {
-      "name": "Advance Cubing",
-      "image": "2X2RubicCube.jpg",
-      "child links": []
+      "title": "Internship at @AWS Cloud Foundation",
+      "date": "June 2025 - Aug 2025",
+      "description": "Worked on AWS services, cloud deployment, and automation. Gained hands-on experience with cloud infrastructure and DevOps practices."
     }
   ],
-  "3X3 Rubic Cube": [
+  "technology": {
+    "Backend": [
+      {
+        "src": "",
+        "name": "JAVA"
+      },
+      {
+        "src": "",
+        "name": "Spring Boot"
+      },
+      {
+        "src": "",
+        "name": "JAVA1"
+      },
+      {
+        "src": "",
+        "name": "JAVA2"
+      }
+    ],
+    "Tools": [
+      {
+        "src": "",
+        "name": "JAVA3"
+      },
+      {
+        "src": "",
+        "name": "Spring Boot"
+      },
+      {
+        "src": "",
+        "name": "JAVA4"
+      },
+      {
+        "src": "",
+        "name": "JAVA5"
+      }
+    ]
+  },
+  "blogs": [
     {
-      "name": "Beginner Cubing",
-      "image": "3X3RubicCube.jpg",
-      "child links": []
+      "title": "Code Quality",
+      "sample": "The life of a code starts with writing code, but the life of a good and standard code begins with planning tow...",
+      "link": "https://www.linkedin.com/posts/mayank-sinha-b85309189_javadeveloper-opentowork-algorithm-activity-7088581079531495424-ec_k?utm_source=share&utm_medium=member_desktop&rcm=ACoAACxct1UBjAFSdld0re6XUNFlmANQJXFyOc4",
+      "image": "./assets/blog.jpg"
     },
     {
-      "name": "Pattern",
-      "image": "3X3RubicCube.jpg",
-      "child links": []
-    },
-    {
-      "name": "Design",
-      "image": "3X3RubicCube.jpg",
-      "child links": []
-    }, {
-      "name": "Intermediate Cubing",
-      "image": "3X3RubicCube.jpg",
-      "child links": []
-    },
-     {
-      "name": "Advance Cubing",
-      "image": "3X3RubicCube.jpg",
-      "child links": []
+      "title": "Developing an application",
+      "sample": "Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where y...",
+      "link": "https://www.linkedin.com/posts/mayank-sinha-b85309189_javadeveloper-opentowork-algorithm-activity-7088581079531495424-ec_k?utm_source=share&utm_medium=member_desktop&rcm=ACoAACxct1UBjAFSdld0re6XUNFlmANQJXFyOc4",
+      "image": "./assets/blog.jpg"
     }
   ],
-  "4X4 Rubic Cube": [
+  "project": [
     {
-      "name": "Beginner Cubing",
-      "image": "4X4RubicCube.jpg",
-      "child links": []
+      "image": "./assets/project.jpg",
+      "title": "GitHub Readme Generator1",
+      "desc": "Its a demo project 1"
     },
     {
-      "name": "Pattern",
-      "image": "4X4RubicCube.jpg",
-      "child links": []
+      "image": "./assets/project.jpg",
+      "title": "GitHub Readme Generator2",
+      "desc": "Its a demo project 2"
     },
     {
-      "name": "Design",
-      "image": "4X4RubicCube.jpg",
-      "child links": []
-    }, {
-      "name": "Intermediate Cubing",
-      "image": "4X4RubicCube.jpg",
-      "child links": []
-    },
-     {
-      "name": "Advance Cubing",
-      "image": "4X4RubicCube.jpg",
-      "child links": []
-    }
-  ],
-  "5X5 Rubic Cube": [
-    {
-      "name": "Beginner Cubing",
-      "image": "5X5RubicCube.jpg",
-      "child links": []
+      "image": "./assets/project.jpg",
+      "title": "GitHub Readme Generator3",
+      "desc": "Its a demo project 3"
     },
     {
-      "name": "Pattern",
-      "image": "5X5RubicCube.jpg",
-      "child links": []
-    },
-    {
-      "name": "Design",
-      "image": "5X5RubicCube.jpg",
-      "child links": []
-    }, {
-      "name": "Intermediate Cubing",
-      "image": "5X5RubicCube.jpg",
-      "child links": []
-    },
-     {
-      "name": "Advance Cubing",
-      "image": "5X5RubicCube.jpg",
-      "child links": []
-    }
-  ],
-  "6X6 Rubic Cube": [
-    {
-      "name": "Beginner Cubing",
-      "image": "6X6RubicCube.jpg",
-      "child links": []
-    },
-    {
-      "name": "Pattern",
-      "image": "6X6RubicCube.jpg",
-      "child links": []
-    },
-    {
-      "name": "Design",
-      "image": "6X6RubicCube.jpg",
-      "child links": []
-    }, {
-      "name": "Intermediate Cubing",
-      "image": "6X6RubicCube.jpg",
-      "child links": []
-    },
-     {
-      "name": "Advance Cubing",
-      "image": "6X6RubicCube.jpg",
-      "child links": []
-    }
-  ],
-  "7X7 Rubic Cube": [
-    {
-      "name": "Beginner Cubing",
-      "image": "7X7RubicCube.jpg",
-      "child links": []
-    },
-    {
-      "name": "Pattern",
-      "image": "7X7RubicCube.jpg",
-      "child links": []
-    },
-    {
-      "name": "Design",
-      "image": "7X7RubicCube.jpg",
-      "child links": []
-    }, {
-      "name": "Intermediate Cubing",
-      "image": "7X7RubicCube.jpg",
-      "child links": []
-    },
-     {
-      "name": "Advance Cubing",
-      "image": "7X7RubicCube.jpg",
-      "child links": []
+      "image": "./assets/project.jpg",
+      "title": "GitHub Readme Generator4",
+      "desc": "Its a demo project 4"
     }
   ]
 }

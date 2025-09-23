@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectange collision</title>
+</head>
+<body>
+    
+    <script>
+        var c1={x:5,y:5,radius:50};
+        var c2={x:2,y:10,radius:10};
+
+        let dx=c1.x-c2.x;
+        let dy=c1.y-c2.y;
+
+        let dis=Math.sqrt(dx*dx+dy*dy);
+        let sum=c1.radius+c2.radius;
+
+        if( dis<sum){
+            console.log("Cllision")
+        }
+        else if(dis==sum)
+        {console.log("Touch")            ;
+        }else{
+            console.log("No collision");}
+    </script>
+</body>
+</html>

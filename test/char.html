@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Move Red Character</title>
+<style>
+  body {
+    margin: 0;
+    background: linear-gradient(to bottom, #cce3f8, #9bd0ff);
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .game-area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .character {
+    position: absolute;
+    width: 80px;
+    height: 160px;
+    background: red;
+    top: 60%;
+    left: 45%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    transition: transform 0.05s;
+  }
+
+  .head {
+    width: 70px;
+    height: 70px;
+    background: red;
+    border-radius: 15px;
+    margin-top: -35px;
+    position: relative;
+  }
+
+  .face {
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    width: 64px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    overflow: hidden;
+    clip-path: circle(50% at 50% 50%);
+  }
+
+  .eyes {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    width: 45px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .eye {
+    width: 18px;
+    height: 18px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .eye::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 6px;
+    height: 6px;
+    background: black;
+    border-radius: 50%;
+  }
+
+  .mouth {
+    position: absolute;
+    bottom: 5px;
+    left: 8px;
+    width: 48px;
+    height: 20px;
+    border: 3px solid black;
+    border-top: none;
+    border-radius: 0 0 40px 40px;
+    background: white;
+  }
+
+  .tooth {
+    position: absolute;
+    top: -2px;
+    width: 8px;
+    height: 6px;
+    background: white;
+    border-right: 2px solid black;
+  }
+
+  .tooth:nth-child(1) { left: 6px; }
+  .tooth:nth-child(2) { left: 16px; }
+  .tooth:nth-child(3) { left: 26px; }
+  .tooth:nth-child(4) { left: 36px; }
+
+  /* Legs */
+  .legs {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
+  .leg {
+    width: 20px;
+    height: 40px;
+    background: red;
+    border-radius: 5px;
+  }
+
+  /* Arms */
+  .arms {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+  }
+
+  .arm {
+    width: 18px;
+    height: 50px;
+    background: red;
+    border-radius: 8px;
+  }
+</style>
+</head>
+<body>
+  <div class="game-area">
+    <div class="character" id="character">
+      <div class="head">
+        <div class="face">
+          <div class="eyes">
+            <div class="eye"></div>
+            <div class="eye"></div>
+          </div>
+          <div class="mouth">
+            <div class="tooth"></div>
+            <div class="tooth"></div>
+            <div class="tooth"></div>
+            <div class="tooth"></div>
+          </div>
+        </div>
+      </div>
+      <div class="arms">
+        <div class="arm"></div>
+        <div class="arm"></div>
+      </div>
+      <div class="legs">
+        <div class="leg"></div>
+        <div class="leg"></div>
+      </div>
+    </div>
+  </div>
+
+<script>
+const character = document.getElementById("character");
+let x = window.innerWidth / 2 - 40;
+let y = window.innerHeight * 0.6;
+let speed = 10;
+
+document.addEventListener("keydown", (e) => {
+  switch (e.key.toLowerCase()) {
+    case "arrowup":
+    case "w":
+      y -= speed;
+      break;
+    case "arrowdown":
+    case "s":
+      y += speed;
+      break;
+    case "arrowleft":
+    case "a":
+      x -= speed;
+      character.style.transform = "scaleX(-1)";
+      break;
+    case "arrowright":
+    case "d":
+      x += speed;
+      character.style.transform = "scaleX(1)";
+      break;
+  }
+  updatePosition();
+});
+
+function updatePosition() {
+  character.style.left = `${x}px`;
+  character.style.top = `${y}px`;
+}
+</script>
+</body>
+</html>

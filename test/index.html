@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SoftQuest Technologies</title>
+  <style>
+    /* ---------- GLOBAL ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #f9fafc;
+      color: #222;
+      scroll-behavior: smooth;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    h1, h2, h3 {
+      font-weight: 600;
+    }
+
+    /* ---------- HEADER ---------- */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 80px;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: 700;
+      background: linear-gradient(90deg, #0066ff, #00ccff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #0066ff;
+    }
+
+    .btn-quote {
+      background: linear-gradient(90deg, #0066ff, #00ccff);
+      padding: 8px 16px;
+      border-radius: 25px;
+      color: white;
+      transition: background 0.3s ease;
+    }
+
+    .btn-quote:hover {
+      background: linear-gradient(90deg, #0055cc, #00aaff);
+    }
+
+    /* ---------- HERO ---------- */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 80px;
+      background: linear-gradient(135deg, #e6f0ff, #f9fafc);
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      font-size: 2.8em;
+      margin-bottom: 15px;
+    }
+
+    .hero-text p {
+      font-size: 1.1em;
+      margin-bottom: 25px;
+      color: #555;
+    }
+
+    .hero-buttons a {
+      display: inline-block;
+      margin-right: 15px;
+      padding: 10px 22px;
+      border-radius: 30px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary {
+      background: linear-gradient(90deg, #0066ff, #00ccff);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+    }
+
+    .btn-secondary {
+      border: 2px solid #0066ff;
+      color: #0066ff;
+    }
+
+    .btn-secondary:hover {
+      background: #0066ff;
+      color: #fff;
+    }
+
+    .hero img {
+      width: 480px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* ---------- ABOUT ---------- */
+    section {
+      padding: 80px;
+    }
+
+    .about {
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #0066ff;
+    }
+
+    .about p {
+      max-width: 700px;
+      margin: 0 auto;
+      color: #444;
+    }
+
+    /* ---------- SERVICES ---------- */
+    .services {
+      background: #fff;
+      text-align: center;
+    }
+
+    .services h2 {
+      color: #0066ff;
+      margin-bottom: 40px;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .service-card {
+      background: #f4f8ff;
+      padding: 25px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card h3 {
+      color: #0066ff;
+      margin-bottom: 10px;
+    }
+
+    /* ---------- CONTACT ---------- */
+    .contact {
+      background: linear-gradient(135deg, #0066ff, #00ccff);
+      color: white;
+      text-align: center;
+      padding: 100px 80px;
+    }
+
+    .contact h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .contact form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact input, .contact textarea {
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+      font-size: 1em;
+    }
+
+    .contact button {
+      padding: 12px;
+      border: none;
+      border-radius: 30px;
+      background: white;
+      color: #0066ff;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .contact button:hover {
+      background: #f4f8ff;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background: #0b1020;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 0.9em;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 900px) {
+      header {
+        padding: 15px 30px;
+      }
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 120px 30px;
+      }
+      .hero img {
+        width: 320px;
+        margin-top: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">SoftQuest Technologies</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="btn-quote">Get a Quote</a>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Building Digital Experiences That Inspire</h1>
+      <p>We create stunning websites and innovative digital solutions to help businesses thrive online.</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn-primary">Start Your Project</a>
+        <a href="#services" class="btn-secondary">View Our Work</a>
+      </div>
+    </div>
+    <img src="https://cdn3d.iconscout.com/3d/premium/thumb/web-design-7899027-6293269.png" alt="Web Design Illustration" />
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <h2>Who We Are</h2>
+    <p>SoftQuest Technologies is a modern web development company passionate about creating high-performance, responsive, and visually captivating websites that empower businesses worldwide.</p>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <h2>Our Core Services</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>Web Design & Development</h3>
+        <p>Custom, scalable, and elegant websites that reflect your brand.</p>
+      </div>
+      <div class="service-card">
+        <h3>E-Commerce Solutions</h3>
+        <p>Sell smarter with secure and conversion-optimized online stores.</p>
+      </div>
+      <div class="service-card">
+        <h3>UI/UX Design</h3>
+        <p>Designs focused on experience, usability, and visual impact.</p>
+      </div>
+      <div class="service-card">
+        <h3>SEO & Marketing</h3>
+        <p>Boost your search rankings and grow your online presence.</p>
+      </div>
+      <div class="service-card">
+        <h3>Web Applications</h3>
+        <p>Full-stack solutions tailored to your business requirements.</p>
+      </div>
+      <div class="service-card">
+        <h3>Maintenance & Support</h3>
+        <p>Ongoing updates and care to keep your site fast and secure.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2>Let’s Build Something Great Together</h2>
+    <form onsubmit="handleSubmit(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 SoftQuest Technologies. All Rights Reserved.
+  </footer>
+
+  <!-- ---------- JS ---------- -->
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      alert("Thank you for contacting SoftQuest Technologies! We'll get back to you soon.");
+      event.target.reset();
+    }
+  </script>
+</body>
+</html>

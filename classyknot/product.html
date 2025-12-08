@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Classic Blue Jeans — ClassyKnot</title>
+  <meta name="description" content="Classic Blue Jeans — premium denim." />
+  <link rel="canonical" href="/product/levis-501-jeans-101" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Classic Blue Jeans",
+    "image": ["https://www.example.com/assets/p1.jpg"],
+    "description": "Premium denim, straight fit.",
+    "sku": "101",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.example.com/product/levis-501-jeans-101",
+      "priceCurrency": "INR",
+      "price": "2499",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+</head>
+<body class="page-product">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img src="assets/logo.png" alt="ClassyKnot" class="brand-logo" />
+      </a>
+      <nav class="nav">
+        <a href="/" class="nav-item">Home</a>
+        <a href="/category/men" class="nav-item">Men</a>
+      </nav>
+      <div class="header-actions">
+        <a href="/cart" class="icon-btn">🛒<span class="cart-count">0</span></a>
+        <button class="hamburger">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container product-page">
+    <nav class="breadcrumbs"><a href="/">Home</a> › <a href="/category/men">Men</a> › <span>Classic Blue Jeans</span></nav>
+
+    <div class="product-grid">
+      <div class="product-images">
+        <img src="assets/p1.jpg" alt="Classic Blue Jeans">
+      </div>
+      <div class="product-info">
+        <h1>Classic Blue Jeans</h1>
+        <p class="price">₹2,499</p>
+        <p class="short-desc">Premium denim, straight fit. Crafted for comfort and durability.</p>
+
+        <form id="addToCartForm">
+          <label>Size
+            <select name="size">
+              <option>28</option>
+              <option>30</option>
+              <option>32</option>
+            </select>
+          </label>
+          <label>Quantity
+            <input type="number" name="qty" value="1" min="1" />
+          </label>
+          <button class="btn btn-primary" type="submit">Add to Cart</button>
+        </form>
+
+        <section class="product-details">
+          <h3>Details</h3>
+          <p>100% cotton. Machine wash cold. Made in India.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer"> <!-- copy footer -->
+    <div class="container footer-inner">
+      <div class="brand-col">
+        <img src="assets/logo.png" alt="ClassyKnot" class="brand-logo footer-logo" />
+        <p>ClassyKnot — premium clothing crafted with care.</p>
+      </div>
+      <div class="links-col">
+        <h4>Shop</h4>
+        <a href="/category/men">Men</a>
+        <a href="/category/women">Women</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">© <span id="year3"></span> ClassyKnot. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

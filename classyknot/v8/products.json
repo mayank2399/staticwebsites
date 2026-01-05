@@ -1,0 +1,60 @@
+[
+  {
+    "id": 101,
+    "name": "Women's Summer Dress",
+    "price": 1299,
+    "image": "assets/p0.png"
+    ,"tag":"men"
+  },
+  {
+    "id": 102,
+    "name": "Casual Sneakers",
+    "price": 1999,
+    "image": "assets/p4.jpg","tag":"men"
+  },
+  {
+    "id": 103,
+    "name": "Stylish Handbag",
+    "price": 899,
+    "image": "assets/p2.jpg","tag":"men"
+  },
+  {
+    "id": 104,
+    "name": "Men Polo Shirt",
+    "price": 1099,
+    "image": "assets/p3.jpg","tag":"men"
+  },
+  {
+    "id": 102,
+    "name": "Pack of 3 Women Full Coverage Non Padded Bra",
+    "price": 1999,
+    "image": "assets/p5.jpg","tag":"women"
+  },
+  {
+    "id": 103,
+    "name": "Pack of 3 Women Full Coverage Non Padded Bra",
+    "price": 899,
+    "image": "assets/p6.jpg","tag":"women"
+  },
+  {
+    "id": 104,
+    "name": "Pack of 3 Women Full Coverage Non Padded Bra",
+    "price": 1099,
+    "image": "assets/p7.jpg","tag":"women"
+  },
+
+
+  
+  {
+    "id": 103,
+    "name": "Water Resistant Kids",
+    "price": 899,
+    "image": "assets/p8.jpg","tag":"kids"
+  },
+  {
+    "id": 104,
+    "name": "Small 12 L Backpack Combo Of 2 Minnie & Pikachu School Backpack Soft Plush Bags (2-5 Years)  (Pink, Yellow)",
+    "price": 1099,
+    "image": "assets/p9.jpg","tag":"kids"
+  }
+]

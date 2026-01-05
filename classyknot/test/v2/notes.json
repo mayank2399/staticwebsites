@@ -1,0 +1,27 @@
+{
+  "DSA": {
+    "Array": [
+      {
+        "id": 1,
+        "title": "Token Bucket Rate Limiter",
+        "difficulty": "Advanced",
+        "tags": ["rate-limiter", "backend"],
+        "lastUpdated": "2025-01-15",
+        "content": "## Token Bucket\n\nUsed to control request rate.\n\n```java\nBandwidth limit = Bandwidth.classic(\n  10,\n  Refill.greedy(1, Duration.ofSeconds(1))\n);\n```\n\n### Diagram\n![Token Bucket](https://dummyimage.com/600x300/000/fff&text=Token+Bucket)\n\n### References\n- https://bucket4j.com\n- https://martinfowler.com\n\n### Video\nhttps://www.youtube.com/watch?v=FY0KjU2n1zU"
+      }
+    ],
+    "LinkedList":
+    {
+      "s": [
+      {
+        "id": 2,
+        "title": "Detect Cycle in Linked List",
+        "difficulty": "Intermediate",
+        "tags": ["linkedlist", "dsa"],
+        "lastUpdated": "2025-01-18",
+        "content": "## Floyd’s Cycle Detection\n\n```java\nwhile (fast != null && fast.next != null) {\n  slow = slow.next;\n  fast = fast.next.next;\n}\n```\n\nUseful for interview prep."
+      }
+    ]
+    }
+  }
+}

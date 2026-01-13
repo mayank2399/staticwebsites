@@ -1,4 +1,63 @@
 
+let navbar = document.getElementById("navbar");
+navbar.innerHTML = `
+ <h1 class="logo">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="StyleStore" height="35">
+            </a>
+        </h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="men.html">Men</a></li>
+            <li><a href="women.html">Women</a></li>
+            <li><a href="kids.html">Kids</a></li>
+            <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+`;
+
+let footer = document.getElementById("footer");
+footer.innerHTML = `
+<div class="footer-container">
+
+            <div class="footer-col">
+                <h4>Online Shopping</h4>
+                <ul>
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>Kids</li>
+                    <li>Footwear</li>
+                    <li>Accessories</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Customer Policies</h4>
+                <ul>
+                    <li>Contact Us</li>
+                    <li>FAQ</li>
+                    <li>Terms of Use</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Experience App</h4>
+                <p>Coming soon on Android & iOS</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Keep in Touch</h4>
+                <p>Facebook | Instagram | Twitter</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 StyleStore. All rights reserved.
+        </div>
+`;
+
+
 let homeProducts = [];
 // Sample static products for home page
 // Load data from JSON file

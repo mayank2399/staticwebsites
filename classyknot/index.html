@@ -1,181 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-
-
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>ClassyKnot — Premium Clothing</title>
-  <meta name="description" content="ClassyKnot — Premium clothing for modern style. Browse men & women collections." />
-  <link rel="canonical" href="/" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StyleStore</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
+<body>
+    <nav class="navbar" id="navbar"></nav>
+    <section class="banner"><img src="assets/banner.png" alt="Banner"></section>
 
-<body class="page-home">
-  <header class="site-header" id="site-header"> </header>
+    <section class="products" id="home-products"></section>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <h1>CLASSY KNOT!</h1>
-          <h2>Elevate Your Everyday Style</h2>
-          <h2> Comfortable Fashion</h2>
-          <h2>Premimum Quality</h2>
-          <p>Discover timeless pieces designed for everyday elegance — curated collections for men & women.</p>
-          <div class="hero-cta">
-            <a href="/category/new-arrivals" class="btn btn-primary">Shop New Arrivals</a>
-          </div>
-        </div>
-        <div class="hero-media" aria-hidden>
-          <img src="assets/banner.png" alt="Model wearing premium clothing" />
-        </div>
-      </div>
-    </section>
 
-    <!-- CATEGORIES -->
-    <section class="container categories" id="containerCategories">
-      <h2 class="section-title">Shop by Collection</h2>
-    </section>
-
-    <!-- FEATURED PRODUCTS -->
-    <section class="container products">
-      <div class="section-head">
-        <h2 class="section-title">Featured Products</h2>
-        <a href="/category/featured" class="view-more">View all</a>
-      </div>
-
-      <div class="grid grid-4 product-grid" id="productGrid">
-        <!-- Example static product cards (replace with backend data) -->
-        <article class="product-card">
-          <a class="product-link" href="/product/levis-501-jeans-101">
-            <div class="product-media"><img src="assets/p1.jpg" alt="Blue Jeans"></div>
-            <div class="product-body">
-              <h3 class="product-title">Classic Blue Jeans</h3>
-              <div class="product-price">₹2,499</div>
-            </div>
-          </a>
-        </article>
-
-        <article class="product-card">
-          <a class="product-link" href="/product/silk-t-shirt-102">
-            <div class="product-media"><img src="assets/p2.jpg" alt="Silk T-Shirt"></div>
-            <div class="product-body">
-              <h3 class="product-title">Silk T-Shirt</h3>
-              <div class="product-price">₹1,799</div>
-            </div>
-          </a>
-        </article>
-
-        <article class="product-card">
-          <a class="product-link" href="/product/linen-shirt-103">
-            <div class="product-media"><img src="assets/p3.jpg" alt="Linen Shirt"></div>
-            <div class="product-body">
-              <h3 class="product-title">Linen Shirt</h3>
-              <div class="product-price">₹2,199</div>
-            </div>
-          </a>
-        </article>
-
-        <article class="product-card">
-          <a class="product-link" href="/product/black-dress-104">
-            <div class="product-media"><img src="assets/p4.jpg" alt="Black Dress"></div>
-            <div class="product-body">
-              <h3 class="product-title">The Little Black Dress</h3>
-              <div class="product-price">₹3,999</div>
-            </div>
-            </a>
-        </article>
-        <article class="product-card">
-          <a class="product-link" href="/product/levis-501-jeans-101">
-            <div class="product-media"><img src="assets/p1.jpg" alt="Blue Jeans"></div>
-            <div class="product-body">
-              <h3 class="product-title">Classic Blue Jeans</h3>
-              <div class="product-price">₹2,499</div>
-            </div>
-          </a>
-        </article>
-
-        <article class="product-card">
-          <a class="product-link" href="/product/silk-t-shirt-102">
-            <div class="product-media"><img src="assets/p2.jpg" alt="Silk T-Shirt"></div>
-            <div class="product-body">
-              <h3 class="product-title">Silk T-Shirt</h3>
-              <div class="product-price">₹1,799</div>
-            </div>
-          </a>
-        </article>
-
-        <article class="product-card">
-          <a class="product-link" href="/product/linen-shirt-103">
-            <div class="product-media"><img src="assets/p3.jpg" alt="Linen Shirt"></div>
-            <div class="product-body">
-              <h3 class="product-title">Linen Shirt</h3>
-              <div class="product-price">₹2,199</div>
-            </div>
-          </a>
-        </article>
-
-        <article class="product-card">
-          <a class="product-link" href="/product/black-dress-104">
-            <div class="product-media"><img src="assets/p4.jpg" alt="Black Dress"></div>
-            <div class="product-body">
-              <h3 class="product-title">The Little Black Dress</h3>
-              <div class="product-price">₹3,999</div>
-            </div>
-            </a>
-        </article>
-        <article class="product-card">
-          <a class="product-link" href="/product/levis-501-jeans-101">
-            <div class="product-media"><img src="assets/p1.jpg" alt="Blue Jeans"></div>
-            <div class="product-body">
-              <h3 class="product-title">Classic Blue Jeans</h3>
-              <div class="product-price">₹2,499</div>
-            </div>
-          </a>
-        </article>
-
-        <article class="product-card">
-          <a class="product-link" href="/product/silk-t-shirt-102">
-            <div class="product-media"><img src="assets/p2.jpg" alt="Silk T-Shirt"></div>
-            <div class="product-body">
-              <h3 class="product-title">Silk T-Shirt</h3>
-              <div class="product-price">₹1,799</div>
-            </div>
-          </a>
-        </article>
-
-        <article class="product-card">
-          <a class="product-link" href="/product/linen-shirt-103">
-            <div class="product-media"><img src="assets/p3.jpg" alt="Linen Shirt"></div>
-            <div class="product-body">
-              <h3 class="product-title">Linen Shirt</h3>
-              <div class="product-price">₹2,199</div>
-            </div>
-          </a>
-        </article>
-
-        <article class="product-card">
-          <a class="product-link" href="/product/black-dress-104">
-            <div class="product-media"><img src="assets/p4.jpg" alt="Black Dress"></div>
-            <div class="product-body">
-              <h3 class="product-title">The Little Black Dress</h3>
-              <div class="product-price">₹3,999</div>
-            </div>
-            </a>
-        </article>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer" id="site-footer">
-   
-  </footer>
-
-  <script src="assets/app.js"></script>
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+    <script src="js/script.js"></script>
 </body>
-</html>
 
+</html>

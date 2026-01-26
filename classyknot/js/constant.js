@@ -1,1 +1,1 @@
-export const beUrl="https://da1f6c4e634e.ngrok-free.app/"
+export const beUrl="https://ecommerce-vrau.onrender.com/";

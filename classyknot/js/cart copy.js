@@ -3,6 +3,7 @@ export async function fetchCart() {
   const token = localStorage.getItem("token");
   let cart;
 
+
   if (!token) {
     // No token, get cart from localStorage
     cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -47,44 +48,51 @@ export function updateCartCount(cart) {
   let totalquantity = cart.reduce((sum, item) => sum + item.quantity, 0);
   cartCount.innerText = totalquantity;
 }
-export async function saveCart(cart,item) {
+
+export async function saveCart(cart, item) {
   const token = localStorage.getItem("token");
 
   localStorage.setItem("cart", JSON.stringify(cart));
-
   if (token) {
     try {
-      console.log(item)
-        const url = beUrl + 'api/cart/update';
-        await fetch(url, {
-          method: 'PUT',
-          headers: {
-            'Authorization': `Bearer ${token}`,
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-            productId: item.productId,
-            quantity: item.quantity
-          })
-        });
-      
-    } catch (err) {
-      console.error("Failed to update cart on server:", err);
-    }
-  }
+      const url = beUrl + 'api/cart/update';
 
+      const body =JSON.stringify({
+          productId: item.productId,
+          quantity: item.quantity
+        });
+      console.log(url)
+      console.log(body)
+      const response = await fetch(url, {
+        method: 'PUT',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json'
+        },
+        body: body
+      });
+
+      // Parse response
+
+
+    } catch (err) {
+      throw err; // rethrow so caller can handle
+    }
+    cart = await fetchCart();
+  }
+  console.log(cart)
   updateCartCount(cart);
-  displayCart(); // re-render UI
 }
 
-export async function displayCart() {
-  let cart = await fetchCart();
-  updateCartCount(cart);
 
+export async function displayCart(url) {
+  const cart = await fetchCart();
+
+  updateCartCount(cart);
   const cartContainer = document.getElementById("cart-container");
   if (!cartContainer) return;
-
   const totalAmountEl = document.getElementById("total-amount");
+
   cartContainer.innerHTML = "<h2>Your Cart</h2>";
 
   if (cart.length === 0) {
@@ -95,7 +103,7 @@ export async function displayCart() {
 
   let total = 0;
 
-  cart.forEach(item => {
+  cart.forEach((item, index) => {
     total += item.price * item.quantity;
 
     const div = document.createElement("div");
@@ -118,37 +126,31 @@ export async function displayCart() {
     // Increase quantity
     div.querySelector(".increase").addEventListener("click", () => {
       item.quantity++;
-      saveCart(cart,item); // pass whole cart
+      saveCart(cart, item);
+      displayCart();
     });
 
     // Decrease quantity
     div.querySelector(".decrease").addEventListener("click", () => {
       item.quantity--;
       if (item.quantity <= 0) {
-        cart = cart.filter(i => i.productId !== item.productId);
+        cart.splice(index, 1);
       }
-      saveCart(cart,item);
+      saveCart(cart, item);
+      displayCart();
     });
 
     // Remove button
     div.querySelector(".remove-btn").addEventListener("click", () => {
-      cart = cart.filter(i => i.productId !== item.productId);
-      saveCart(cart,item);
+      cart.splice(index, 1);
+      saveCart(cart, item);
+      displayCart();
     });
 
     cartContainer.appendChild(div);
   });
 
   totalAmountEl.innerText = `Total: ₹${total}`;
-
-
-  const purchaseCart= document.getElementById("purchase-cart");
-  purchaseCart.addEventListener("click",() => {
-         localStorage.setItem("checkoutType","cart");
-           window.location.href = "checkout.html";
-
-         
-  });
 }
 
 

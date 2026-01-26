@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Checkout</h1>
+
+  <!-- Address -->
+  <div class="card">
+    <h2>Delivery Address</h2>
+    <div id="addressList">Loading addresses...</div>
+  </div>
+
+  <!-- Order Summary -->
+  <div class="card">
+    <h2>Order Summary</h2>
+    <div id="cartItems">Loading items...</div>
+    <div class="total">
+      Total: ₹<span id="totalAmount">0</span>
+    </div>
+  </div>
+
+  <button class="btn" id="placeOrder">Place Order</button>
+</div>
+
+<script type="module"  src="js/checkout.js"></script>
+</body>
+</html>

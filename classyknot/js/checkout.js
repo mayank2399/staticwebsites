@@ -171,7 +171,7 @@ function initiatePayment(orderId) {
     .then(data => {
       setTimeout(() => {
   alert("Done! Redirecting to home page ...");
-        window.location.href = "/";
+        window.location.href = "https://mayank2399.github.io/staticwebsites/classyknot/";
       }, 5000);
 
 

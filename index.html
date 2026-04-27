@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade Hub | Mini Games Collection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --text-light: #f8fafc;
+            --primary: #3b82f6;
+            --accent: #10b981;
+            --card-bg: #1e293b;
+            --card-hover: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            background-image:
+                radial-gradient(circle at top right, rgba(59, 130, 246, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at bottom left, rgba(16, 185, 129, 0.15) 0%, transparent 40%);
+            background-attachment: fixed;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+            margin-top: 2rem;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #60a5fa, #34d399);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+            letter-spacing: -1px;
+        }
+
+        p.subtitle {
+            font-size: 1.25rem;
+            color: #94a3b8;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            width: 100%;
+            max-width: 1200px;
+            animation: fadeIn 1s ease-out 0.3s both;
+        }
+
+        .game-card {
+            background-color: var(--card-bg);
+            border-radius: 1.5rem;
+            padding: 2rem;
+            text-decoration: none;
+            color: var(--text-light);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        .game-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, transparent 100%);
+            pointer-events: none;
+        }
+
+        .game-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            background-color: var(--card-hover);
+            border-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(59, 130, 246, 0.2);
+        }
+
+        .game-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 1rem;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .game-card:hover .game-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .game-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #f1f5f9;
+        }
+
+        .game-desc {
+            font-size: 1rem;
+            color: #94a3b8;
+            flex-grow: 1;
+        }
+
+        .play-btn {
+            margin-top: 1.5rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #60a5fa;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.2s;
+        }
+
+        .game-card:hover .play-btn {
+            color: #34d399;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Arcade Hub</h1>
+        <p class="subtitle">A collection of highly performant, zero-dependency HTML5 mini-games built with modern web
+            technologies.</p>
+    </header>
+
+    <main class="grid-container">
+
+        <a href="ball-dash/index.html" class="game-card">
+            <div class="game-icon">🔮</div>
+            <h2 class="game-title">Ball Dash</h2>
+            <p class="game-desc">A 3D endless runner. Swipe to dodge walls and jump over barriers in a procedural neon
+                world.</p>
+            <div class="play-btn">Play Now &rarr;</div>
+        </a>
+
+        <a href="block-puzzle-jewel/index.html" class="game-card">
+            <div class="game-icon">🔮</div>
+            <h2 class="game-title">Ball Dash</h2>
+            <p class="game-desc">A 3D endless runner. Swipe to dodge walls and jump over barriers in a procedural neon
+                world.</p>
+            <div class="play-btn">Play Now &rarr;</div>
+        </a>
+
+        <a href="color-fill-puzzle/index.html" class="game-card">
+            <div class="game-icon">🌊</div>
+            <h2 class="game-title">Color Fill</h2>
+            <p class="game-desc">Use algorithmic flood-fill mechanics to turn the entire grid into a single color.</p>
+            <div class="play-btn">Play Now &rarr;</div>
+        </a>
+        <a href="draw-to-save/index.html" class="game-card">
+            <div class="game-icon">✏️</div>
+            <h2 class="game-title">Draw to Save</h2>
+            <p class="game-desc">Draw a rigid physical shield using ink to protect the character from falling spikes and
+                bombs.</p>
+            <div class="play-btn">Play Now &rarr;</div>
+        </a>
+        <a href="drop-merge/index.html" class="game-card">
+            <div class="game-icon">✏️</div>
+            <h2 class="game-title">Draw to Save</h2>
+            <p class="game-desc">Draw a rigid physical shield using ink to protect the character from falling spikes and
+                bombs.</p>
+            <div class="play-btn">Play Now &rarr;</div>
+        </a>
+
+         <a href="fill-one-line/index.html" class="game-card">
+            <div class="game-icon">✏️</div>
+            <h2 class="game-title">Draw to Save</h2>
+            <p class="game-desc">Draw a rigid physical shield using ink to protect the character from falling spikes and
+                bombs.</p>
+            <div class="play-btn">Play Now &rarr;</div>
+        </a>
+
+ <a href="hexa-block-puzzle/index.html" class="game-card">
+            <div class="game-icon">✏️</div>
+            <h2 class="game-title">Draw to Save</h2>
+            <p class="game-desc">Draw a rigid physical shield using ink to protect the character from falling spikes and
+                bombs.</p>
+            <div class="play-btn">Play Now &rarr;</div>
+        </a>
+
+         <a href="kakuro/index.html" class="game-card">
+            <div class="game-icon">✏️</div>
+            <h2 class="game-title">Draw to Save</h2>
+            <p class="game-desc">Draw a rigid physical shield using ink to protect the character from falling spikes and
+                bombs.</p>
+            <div class="play-btn">Play Now &rarr;</div>
+        </a>
+
+         <a href="kenken/index.html" class="game-card">
+            <div class="game-icon">✏️</div>
+            <h2 class="game-title">Draw to Save</h2>
+            <p class="game-desc">Draw a rigid physical shield using ink to protect the character from falling spikes and
+                bombs.</p>
+            <div class="play-btn">Play Now &rarr;</div>
+        </a>
+
+
+         <a href="logic-grid/index.html" class="game-card">
+            <div class="game-icon">✏️</div>
+            <h2 class="game-title">Draw to Save</h2>
+            <p class="game-desc">Draw a rigid physical shield using ink to protect the character from falling spikes and
+                bombs.</p>
+            <div class="play-btn">Play Now &rarr;</div>
+        </a>
+
+         <a href="minesweeper/index.html" class="game-card">
+            <div class="game-icon">✏️</div>
+            <h2 class="game-title">Draw to Save</h2>
+            <p class="game-desc">Draw a rigid physical shield using ink to protect the character from falling spikes and
+                bombs.</p>
+            <div class="play-btn">Play Now &rarr;</div>
+        </a>
+
+         <a href="nonogram/index.html" class="game-card">
+            <div class="game-icon">✏️</div>
+            <h2 class="game-title">Draw to Save</h2>
+            <p class="game-desc">Draw a rigid physical shield using ink to protect the character from falling spikes and
+                bombs.</p>
+            <div class="play-btn">Play Now &rarr;</div>
+        </a>
+
+         <a href="parking-jam/index.html" class="game-card">
+            <div class="game-icon">✏️</div>
+            <h2 class="game-title">Draw to Save</h2>
+            <p class="game-desc">Draw a rigid physical shield using ink to protect the character from falling spikes and
+                bombs.</p>
+            <div class="play-btn">Play Now &rarr;</div>
+        </a>
+
+         <a href="reaction-speed-test/index.html" class="game-card">
+            <div class="game-icon">✏️</div>
+            <h2 class="game-title">Draw to Save</h2>
+            <p class="game-desc">Draw a rigid physical shield using ink to protect the character from falling spikes and
+                bombs.</p>
+            <div class="play-btn">Play Now &rarr;</div>
+        </a>
+
+         <a href="screw-puzzle/index.html" class="game-card">
+            <div class="game-icon">✏️</div>
+            <h2 class="game-title">Draw to Save</h2>
+            <p class="game-desc">Draw a rigid physical shield using ink to protect the character from falling spikes and
+                bombs.</p>
+            <div class="play-btn">Play Now &rarr;</div>
+        </a>
+
+         <a href="stack-smash/index.html" class="game-card">
+            <div class="game-icon">✏️</div>
+            <h2 class="game-title">Draw to Save</h2>
+            <p class="game-desc">Draw a rigid physical shield using ink to protect the character from falling spikes and
+                bombs.</p>
+            <div class="play-btn">Play Now &rarr;</div>
+        </a>
+
+         <a href="tap-timing/index.html" class="game-card">
+            <div class="game-icon">✏️</div>
+            <h2 class="game-title">Draw to Save</h2>
+            <p class="game-desc">Draw a rigid physical shield using ink to protect the character from falling spikes and
+                bombs.</p>
+            <div class="play-btn">Play Now &rarr;</div>
+        </a>
+
+         <a href="triple-tile-match/index.html" class="game-card">
+            <div class="game-icon">✏️</div>
+            <h2 class="game-title">Draw to Save</h2>
+            <p class="game-desc">Draw a rigid physical shield using ink to protect the character from falling spikes and
+                bombs.</p>
+            <div class="play-btn">Play Now &rarr;</div>
+        </a>
+
+         <a href="unblock-puzzle/index.html" class="game-card">
+            <div class="game-icon">✏️</div>
+            <h2 class="game-title">Draw to Save</h2>
+            <p class="game-desc">Draw a rigid physical shield using ink to protect the character from falling spikes and
+                bombs.</p>
+            <div class="play-btn">Play Now &rarr;</div>
+        </a>
+
+         <a href="zigzag-runner/index.html" class="game-card">
+            <div class="game-icon">✏️</div>
+            <h2 class="game-title">Draw to Save</h2>
+            <p class="game-desc">Draw a rigid physical shield using ink to protect the character from falling spikes and
+                bombs.</p>
+            <div class="play-btn">Play Now &rarr;</div>
+        </a>
+    </main>
+
+</body>
+
+</html>

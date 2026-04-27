@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Nonogram / Picross</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Nonogram</h1>
+            <div class="header-controls">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+                    <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                </button>
+            </div>
+        </header>
+
+        <div class="status-bar">
+            <div class="status-item">
+                <span class="label">Time</span>
+                <span id="timer" class="value">00:00</span>
+            </div>
+            <div class="status-item">
+                <span class="label">Mistakes</span>
+                <span id="mistakes" class="value">0 / 3</span>
+            </div>
+            <div class="controls">
+                <select id="difficulty-select">
+                    <option value="5">5 x 5</option>
+                    <option value="10" selected>10 x 10</option>
+                    <option value="15">15 x 15</option>
+                </select>
+                <button id="new-game-btn" class="primary-btn">New Game</button>
+                <button id="restart-btn" class="secondary-btn">Restart</button>
+            </div>
+        </div>
+
+        <main class="game-wrapper">
+            <div id="game-container">
+                <!-- Dynamically generated -->
+                <div id="corner-blank"></div>
+                <div id="col-hints"></div>
+                <div id="row-hints"></div>
+                <div id="grid"></div>
+            </div>
+        </main>
+
+        <div class="mobile-controls">
+            <div class="toggle-switch">
+                <input type="checkbox" id="action-toggle">
+                <label for="action-toggle">
+                    <span class="fill-icon">⬛</span>
+                    <span class="mark-icon">❌</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Modals -->
+        <div id="game-over-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2 id="modal-title">Game Over</h2>
+                <p id="modal-message">You made too many mistakes.</p>
+                <button id="modal-new-game-btn" class="primary-btn">Try Again</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "categories": [
+    {
+      "name": "Names",
+      "items": ["Alice", "Bob", "Charlie", "Dave"]
+    },
+    {
+      "name": "Pets",
+      "items": ["Dog", "Cat", "Bird", "Fish"]
+    },
+    {
+      "name": "Colors",
+      "items": ["Red", "Blue", "Green", "Yellow"]
+    }
+  ],
+  "clues": [
+    "Bob has a Dog.",
+    "The person who likes Yellow has a Bird.",
+    "Alice likes Red and has a Cat.",
+    "Charlie likes Green.",
+    "Dave does not have a Fish."
+  ],
+  "solution": [
+    { "Names": "Alice", "Pets": "Cat", "Colors": "Red" },
+    { "Names": "Bob", "Pets": "Dog", "Colors": "Blue" },
+    { "Names": "Charlie", "Pets": "Fish", "Colors": "Green" },
+    { "Names": "Dave", "Pets": "Bird", "Colors": "Yellow" }
+  ]
+}

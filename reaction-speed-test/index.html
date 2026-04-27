@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Reaction Speed Test</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app" class="state-idle">
+        <header>
+            <div class="stats">
+                <div>BEST: <span id="best-time">--</span> ms</div>
+                <div id="round-counter">ROUND 0 / 5</div>
+            </div>
+        </header>
+
+        <main id="interaction-area">
+            <div class="content">
+                <div id="icon" class="icon">⚡</div>
+                <h1 id="main-text">Reaction Time Test</h1>
+                <p id="sub-text">When the red box turns green, click as quickly as you can.<br>Click anywhere to begin.</p>
+            </div>
+        </main>
+        
+        <!-- Results History (only shown at end) -->
+        <div id="results-modal" class="hidden">
+            <div class="results-content">
+                <h2>Test Complete!</h2>
+                <div class="avg-display">
+                    Average: <span id="final-avg">--</span> ms
+                </div>
+                <ul id="times-list"></ul>
+                <button id="btn-restart">TRY AGAIN</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+</html>

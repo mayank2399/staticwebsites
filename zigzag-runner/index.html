@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ZigZag Runner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-ui">
+        <header>
+            <div id="score-display">0</div>
+        </header>
+
+        <div id="start-overlay" class="overlay">
+            <div class="overlay-content">
+                <h1>ZIGZAG</h1>
+                <p>Tap to change direction</p>
+                <p>Stay on the wall!</p>
+                <button id="btn-start" class="btn-pulse">TAP TO START</button>
+            </div>
+        </div>
+
+        <div id="gameover-overlay" class="overlay hidden">
+            <div class="overlay-content">
+                <h2>GAME OVER</h2>
+                <div class="score-wrap">
+                    <span>SCORE</span>
+                    <span id="final-score">0</span>
+                </div>
+                <button id="btn-restart" class="btn-pulse">TRY AGAIN</button>
+            </div>
+        </div>
+        
+        <!-- Milestone notifications will spawn here -->
+        <div id="milestone-container"></div>
+    </div>
+
+    <!-- Three.js from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>

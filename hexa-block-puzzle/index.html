@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Hexa Block Puzzle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div class="level-info">Level <span id="level-display">1</span></div>
+            <h1>Hexa Puzzle</h1>
+            <button id="btn-reset" aria-label="Reset Level">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path></svg>
+            </button>
+        </header>
+
+        <main>
+            <div id="board-container">
+                <svg id="board-svg" width="100%" height="100%"></svg>
+            </div>
+            
+            <div id="tray-container">
+                <!-- Draggable block groups will be rendered here -->
+            </div>
+        </main>
+        
+        <div id="modal-overlay" class="hidden">
+            <div id="modal-content">
+                <h2 id="modal-title">Level Complete!</h2>
+                <p id="modal-message">Great job! Ready for the next one?</p>
+                <button id="btn-next-level">Next Level</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+</html>

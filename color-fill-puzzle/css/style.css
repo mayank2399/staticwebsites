@@ -1,0 +1,185 @@
+:root {
+    --bg: #1e1e2f;
+    --text: #ffffff;
+    --board-bg: #2a2a40;
+    
+    /* Base Colors - will map to CSS variables in JS */
+    --c0: #ff4757;
+    --c1: #1e90ff;
+    --c2: #2ed573;
+    --c3: #ffa502;
+    --c4: #9c88ff;
+    --c5: #ff6348;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    touch-action: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+#app {
+    width: 100%;
+    max-width: 500px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+@media (min-height: 700px) and (min-width: 500px) {
+    #app {
+        height: 90vh;
+        border-radius: 2rem;
+        background: #252538;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 2rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.moves-info {
+    color: #ffa502;
+}
+
+#board-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+#grid {
+    display: grid;
+    gap: 2px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: var(--board-bg);
+    padding: 4px;
+    border-radius: 12px;
+    box-shadow: inset 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.cell {
+    border-radius: 4px;
+    transition: background-color 0.1s, transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Add a pop effect when cell changes color */
+.cell.pop {
+    transform: scale(1.15);
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+#palette {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.color-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid rgba(255,255,255,0.2);
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.1s, border-color 0.2s;
+}
+
+.color-btn:active {
+    transform: scale(0.9);
+}
+
+.color-btn:hover {
+    border-color: rgba(255,255,255,0.8);
+}
+
+/* Modal */
+#modal-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+#modal-overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-content {
+    background: #252538;
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    transform: scale(1);
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    border: 2px solid rgba(255,255,255,0.1);
+}
+
+#modal-overlay.hidden .modal-content {
+    transform: scale(0.8);
+}
+
+.modal-content h2 {
+    color: #ff4757;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn-primary {
+    background: #ff4757;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-family: inherit;
+    font-weight: 800;
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: 0 6px 0 #cc3946, 0 10px 15px rgba(0,0,0,0.3);
+    transition: transform 0.1s, box-shadow 0.1s;
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+.btn-primary:active {
+    transform: translateY(6px);
+    box-shadow: 0 0 0 #cc3946, 0 2px 5px rgba(0,0,0,0.3);
+}

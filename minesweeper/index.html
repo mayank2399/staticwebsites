@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Modern Minesweeper</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app" class="theme-dark">
+        <header>
+            <div class="logo">
+                <h1>Minesweeper</h1>
+            </div>
+            <div class="header-controls">
+                <button id="btn-theme" aria-label="Toggle Theme">
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                </button>
+                <button id="btn-settings" aria-label="Settings">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                </button>
+            </div>
+        </header>
+
+        <main class="game-container">
+            <div class="hud">
+                <div class="hud-item tooltip-container" data-tooltip="Flags Remaining">
+                    <span class="icon">🚩</span>
+                    <span id="flag-count" class="hud-value">010</span>
+                </div>
+                <button id="btn-restart" class="btn-restart" aria-label="Restart Game">😊</button>
+                <div class="hud-item tooltip-container" data-tooltip="Time Elapsed">
+                    <span class="icon">⏱️</span>
+                    <span id="timer" class="hud-value">000</span>
+                </div>
+            </div>
+
+            <div class="board-wrapper">
+                <div id="game-board" class="game-board" role="grid" tabindex="0"></div>
+            </div>
+        </main>
+
+        <div id="modal-overlay" class="modal-overlay hidden">
+            <!-- Settings Modal -->
+            <div id="modal-settings" class="modal hidden">
+                <div class="modal-header">
+                    <h2>Settings</h2>
+                    <button class="btn-close" aria-label="Close">×</button>
+                </div>
+                <div class="modal-content">
+                    <div class="form-group">
+                        <label for="difficulty-select">Difficulty</label>
+                        <select id="difficulty-select">
+                            <option value="beginner">Beginner (8x8, 10 mines)</option>
+                            <option value="intermediate">Intermediate (16x16, 40 mines)</option>
+                            <option value="expert">Expert (24x24, 99 mines)</option>
+                            <option value="custom">Custom</option>
+                        </select>
+                    </div>
+                    
+                    <div id="custom-settings" class="custom-settings hidden">
+                        <div class="form-group">
+                            <label for="input-width">Width (4-30)</label>
+                            <input type="number" id="input-width" min="4" max="30" value="8">
+                        </div>
+                        <div class="form-group">
+                            <label for="input-height">Height (4-30)</label>
+                            <input type="number" id="input-height" min="4" max="30" value="8">
+                        </div>
+                        <div class="form-group">
+                            <label for="input-mines">Mines</label>
+                            <input type="number" id="input-mines" min="1" max="999" value="10">
+                        </div>
+                    </div>
+                    
+                    <button id="btn-save-settings" class="btn-primary">Save & Restart</button>
+                </div>
+            </div>
+
+            <!-- Game Over / Win Modal -->
+            <div id="modal-game-over" class="modal hidden">
+                <div class="modal-header">
+                    <h2 id="game-over-title">Game Over</h2>
+                </div>
+                <div class="modal-content text-center">
+                    <p id="game-over-message" class="game-message">You hit a mine!</p>
+                    <div class="stats-row">
+                        <div class="stat">
+                            <span class="stat-label">Time</span>
+                            <span id="stat-time" class="stat-value">0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Best</span>
+                            <span id="stat-best" class="stat-value">-</span>
+                        </div>
+                    </div>
+                    <button id="btn-play-again" class="btn-primary btn-large">Play Again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Celebration Canvas -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <script src="js/storage.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

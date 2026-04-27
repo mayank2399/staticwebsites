@@ -1,0 +1,282 @@
+:root {
+    --bg-color: #f0f4f8;
+    --text-color: #102a43;
+    --cell-empty: #ffffff;
+    --cell-black: #243b53;
+    --cell-clue-text: #f0f4f8;
+    --cell-border: #9fb3c8;
+    --grid-border: #102a43;
+    --primary-color: #0070f3;
+    --primary-hover: #0051a8;
+    --secondary-color: #bcccdc;
+    --secondary-hover: #9fb3c8;
+    --highlight: #dceefb;
+    --error-color: #e53e3e;
+    --success-color: #38a169;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden; /* Prevent scrolling, fixed layout for mobile */
+}
+
+.app-container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 15px;
+    gap: 15px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.timer {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+select {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--secondary-color);
+    font-family: inherit;
+    font-size: 0.95rem;
+    outline: none;
+    background: white;
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: var(--primary-hover);
+}
+
+.secondary-btn {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.secondary-btn:hover {
+    background-color: var(--secondary-hover);
+}
+
+.game-area {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.grid {
+    display: grid;
+    border: 3px solid var(--grid-border);
+    background-color: var(--grid-border);
+    gap: 1px;
+    max-width: 100%;
+    max-height: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+/* Grid Cells */
+.cell {
+    background-color: var(--cell-empty);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media (max-width: 400px) {
+    .cell {
+        font-size: 1.2rem;
+    }
+}
+
+.cell.empty {
+    background-color: var(--cell-black);
+    cursor: default;
+}
+
+/* Clue cell split */
+.cell.clue {
+    background-color: var(--cell-black);
+    cursor: default;
+    background-image: linear-gradient(to bottom right, transparent calc(50% - 1px), rgba(255,255,255,0.5) calc(50% - 1px), rgba(255,255,255,0.5) calc(50% + 1px), transparent calc(50% + 1px));
+}
+
+.clue-down, .clue-right {
+    position: absolute;
+    color: var(--cell-clue-text);
+    font-size: 0.8rem;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+
+@media (max-width: 400px) {
+    .clue-down, .clue-right {
+        font-size: 0.65rem;
+    }
+}
+
+.clue-down {
+    bottom: 4px;
+    left: 4px;
+}
+
+.clue-right {
+    top: 4px;
+    right: 4px;
+}
+
+/* Value cells */
+.cell.value.selected {
+    background-color: var(--highlight);
+    box-shadow: inset 0 0 0 2px var(--primary-color);
+}
+
+.cell.value.error {
+    color: var(--error-color);
+    background-color: #fed7d7;
+}
+
+.cell.value.solved {
+    color: var(--success-color);
+}
+
+/* Keypad */
+.keypad-container {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 5px;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.key {
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 0;
+    font-size: 1.2rem;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    color: var(--text-color);
+    cursor: pointer;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.1);
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.key:active {
+    transform: translateY(2px);
+    box-shadow: 0 0 0 rgba(0,0,0,0.1);
+}
+
+.action-key {
+    background-color: #cbd5e1;
+}
+
+/* Modals */
+.modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.modal.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    width: 90%;
+    max-width: 350px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.modal-content h2 {
+    color: var(--success-color);
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}

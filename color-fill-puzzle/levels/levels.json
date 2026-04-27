@@ -1,0 +1,7 @@
+[
+  { "id": 1, "size": 6, "colors": 3, "moves": 10 },
+  { "id": 2, "size": 8, "colors": 4, "moves": 16 },
+  { "id": 3, "size": 10, "colors": 5, "moves": 22 },
+  { "id": 4, "size": 12, "colors": 6, "moves": 28 },
+  { "id": 5, "size": 14, "colors": 6, "moves": 34 }
+]

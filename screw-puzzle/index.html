@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Screw Puzzle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-ui">
+        <header>
+            <div id="level-display">LEVEL 1</div>
+        </header>
+
+        <main id="board">
+            <svg id="wire-layer" width="100%" height="100%"></svg>
+            <div id="screw-layer"></div>
+        </main>
+
+        <!-- Overlays -->
+        <div id="overlay-start" class="overlay">
+            <div class="overlay-content">
+                <h1>SCREW PUZZLE</h1>
+                <p>Follow the wires. Remove the glowing screws to unlock the others.</p>
+                <button id="btn-start" class="btn-primary">PLAY</button>
+            </div>
+        </div>
+
+        <div id="overlay-win" class="overlay hidden">
+            <div class="overlay-content">
+                <h2 style="color: #00ff00;">UNLOCKED!</h2>
+                <p>Puzzle solved.</p>
+                <button id="btn-next" class="btn-primary">NEXT LEVEL</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Stack Smash</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-ui">
+        <header>
+            <div id="level-display">LEVEL 1</div>
+            <div id="score-display">0</div>
+        </header>
+
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+
+        <div id="modal-overlay" class="hidden">
+            <div class="modal-content">
+                <h2 id="modal-title">GAME OVER</h2>
+                <div class="score-wrap">
+                    <span>SCORE</span>
+                    <span id="final-score">0</span>
+                </div>
+                <button id="btn-action">PLAY AGAIN</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Three.js from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>

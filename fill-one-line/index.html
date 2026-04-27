@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Fill One Line</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Fill One Line</h1>
+            <div class="header-info">
+                <span id="level-display">Level 1</span>
+                <button id="reset-btn" class="icon-btn" aria-label="Reset Level">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+                </button>
+            </div>
+        </header>
+
+        <main class="game-area">
+            <div class="canvas-wrapper">
+                <canvas id="game-canvas"></canvas>
+            </div>
+            <p class="hint-text">Drag to connect all dots in a single continuous line.</p>
+        </main>
+    </div>
+
+    <!-- Modals -->
+    <div id="success-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2 class="success-title">Level Cleared!</h2>
+            <div class="star-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="#fbbf24" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <button id="next-level-btn" class="primary-btn">Next Level</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/game.js"></script>
+</body>
+</html>

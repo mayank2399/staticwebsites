@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Block Puzzle Jewel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div class="score-container">
+                <div class="score-label">SCORE</div>
+                <div id="score" class="score-value">0</div>
+            </div>
+            <div class="score-container">
+                <div class="score-label">BEST</div>
+                <div id="best-score" class="score-value">0</div>
+            </div>
+        </header>
+
+        <main>
+            <div id="combo-display" class="combo-display"></div>
+            
+            <div id="board-container">
+                <div id="grid" class="grid">
+                    <!-- 100 cells generated via JS -->
+                </div>
+            </div>
+            
+            <div id="tray-container" class="tray">
+                <!-- 3 draggable piece slots generated via JS -->
+            </div>
+        </main>
+        
+        <div id="modal-overlay" class="modal-overlay hidden">
+            <div class="modal-content">
+                <h2>GAME OVER</h2>
+                <div class="final-score-wrap">
+                    <span class="score-label">SCORE</span>
+                    <span id="final-score" class="score-value highlight">0</span>
+                </div>
+                <button id="btn-restart" class="btn-primary">PLAY AGAIN</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+</html>

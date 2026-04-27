@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "difficulty": "Easy",
+    "size": 4,
+    "grid": [
+      [{"type":"empty"}, {"type":"clue","down":4}, {"type":"clue","down":13}, {"type":"empty"}],
+      [{"type":"clue","right":4}, {"type":"value","solution":1}, {"type":"value","solution":3}, {"type":"clue","down":16}],
+      [{"type":"clue","right":14}, {"type":"value","solution":3}, {"type":"value","solution":2}, {"type":"value","solution":9}],
+      [{"type":"empty"}, {"type":"clue","right":15}, {"type":"value","solution":8}, {"type":"value","solution":7}]
+    ]
+  },
+  {
+    "id": 2,
+    "difficulty": "Medium",
+    "size": 5,
+    "grid": [
+      [{"type":"empty"}, {"type":"clue","down":14}, {"type":"clue","down":16}, {"type":"empty"}, {"type":"empty"}],
+      [{"type":"clue","right":7}, {"type":"value","solution":5}, {"type":"value","solution":2}, {"type":"clue","down":10}, {"type":"empty"}],
+      [{"type":"clue","right":24}, {"type":"value","solution":9}, {"type":"value","solution":8}, {"type":"value","solution":7}, {"type":"clue","down":4}],
+      [{"type":"empty"}, {"type":"clue","right":9}, {"type":"value","solution":6}, {"type":"value","solution":3}, {"type":"value","solution":1}],
+      [{"type":"empty"}, {"type":"empty"}, {"type":"clue","right":3}, {"type":"value","solution":1}, {"type":"value","solution":2}]
+    ]
+  }
+]

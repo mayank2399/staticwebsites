@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Triple Tile Match</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div class="level-info">Level <span id="level-display">1</span></div>
+            <div class="score-info">Score: <span id="score-display">0</span></div>
+            <div class="controls">
+                <button id="btn-undo" class="icon-btn" aria-label="Undo">↩️</button>
+                <button id="btn-shuffle" class="icon-btn" aria-label="Shuffle">🔀</button>
+            </div>
+        </header>
+
+        <main id="board-container">
+            <!-- 3D Tiles go here -->
+        </main>
+        
+        <div class="tray-container">
+            <div id="tray" class="tray">
+                <div class="tray-slot"></div>
+                <div class="tray-slot"></div>
+                <div class="tray-slot"></div>
+                <div class="tray-slot"></div>
+                <div class="tray-slot"></div>
+                <div class="tray-slot"></div>
+                <div class="tray-slot"></div>
+            </div>
+        </div>
+        
+        <div id="modal-overlay" class="hidden">
+            <div class="modal-content">
+                <h2 id="modal-title">GAME OVER</h2>
+                <p id="modal-desc">No more space in the tray!</p>
+                <button id="btn-next" class="btn-primary">PLAY AGAIN</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+</html>

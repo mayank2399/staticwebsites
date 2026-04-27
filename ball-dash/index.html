@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Ball Dash</title>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-ui">
+        <header>
+            <div id="distance-display">0m</div>
+        </header>
+
+        <div id="start-overlay" class="overlay">
+            <div class="overlay-content">
+                <h1>BALL DASH</h1>
+                <p>Swipe Left/Right to switch lanes</p>
+                <p>Swipe Up to jump</p>
+                <button id="btn-start" class="btn-pulse">START</button>
+            </div>
+        </div>
+
+        <div id="gameover-overlay" class="overlay hidden">
+            <div class="overlay-content">
+                <h2>CRASHED!</h2>
+                <div class="score-wrap">
+                    <span>DISTANCE</span>
+                    <span id="final-score">0m</span>
+                </div>
+                <button id="btn-restart" class="btn-pulse">TRY AGAIN</button>
+            </div>
+        </div>
+        
+        <div id="milestone-container"></div>
+    </div>
+
+    <!-- Three.js from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>

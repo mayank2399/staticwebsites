@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Parking Jam Puzzle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-ui">
+        <header>
+            <div id="level-display">LEVEL 1</div>
+            <div id="move-counter">MOVES: 0</div>
+        </header>
+
+        <main id="board-container">
+            <div id="board">
+                <div id="exit-marker">EXIT</div>
+                <!-- Grid Cells (optional visual only) -->
+                <div id="grid-bg"></div>
+                <!-- Cars will be appended here -->
+                <div id="cars-layer"></div>
+            </div>
+        </main>
+
+        <!-- Overlays -->
+        <div id="overlay-start" class="overlay">
+            <div class="overlay-content">
+                <h1>RUSH HOUR</h1>
+                <p>Slide the cars to clear a path for the RED car to reach the exit.</p>
+                <button id="btn-start" class="btn-primary">PLAY</button>
+            </div>
+        </div>
+
+        <div id="overlay-win" class="overlay hidden">
+            <div class="overlay-content">
+                <h2 style="color: #00ff00;">ESCAPED!</h2>
+                <p>Puzzle solved in <span id="final-moves">0</span> moves.</p>
+                <button id="btn-next" class="btn-primary">NEXT LEVEL</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+</html>

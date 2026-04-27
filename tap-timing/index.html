@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Tap Timing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-ui">
+        <header>
+            <div class="score-container">SCORE: <span id="score-display">0</span></div>
+            <div class="best-container">BEST: <span id="best-display">0</span></div>
+        </header>
+
+        <div id="start-overlay" class="overlay">
+            <div class="overlay-content">
+                <h1>TAP TIMING</h1>
+                <p>Tap when the cursor hits the target.</p>
+                <button id="btn-start">PLAY</button>
+            </div>
+        </div>
+
+        <div id="gameover-overlay" class="overlay hidden">
+            <div class="overlay-content">
+                <h2>GAME OVER</h2>
+                <p>You missed!</p>
+                <button id="btn-restart">RESTART</button>
+            </div>
+        </div>
+        
+        <div id="feedback-container"></div>
+    </div>
+
+    <canvas id="game-canvas"></canvas>
+
+    <script src="js/game.js"></script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+:root {
+    --bg-color: #2c3e50;
+    --text-color: #ecf0f1;
+    --board-bg: #8b5a2b; /* Dark wood */
+    --board-border: #5c3a21;
+    --grid-line: rgba(255, 255, 255, 0.1);
+    --block-normal-1: #deb887; /* Burlywood */
+    --block-normal-2: #cdaa7d;
+    --block-main-1: #e74c3c; /* Red */
+    --block-main-2: #c0392b;
+    --btn-primary: #27ae60;
+    --btn-primary-hover: #2ecc71;
+    --btn-secondary: #e67e22;
+    --btn-secondary-hover: #f39c12;
+    --btn-disabled: #7f8c8d;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden; /* Prevent pull-to-refresh on mobile */
+}
+
+.app-container {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    color: #f1c40f;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.level-selector {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+}
+
+select {
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-family: inherit;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+}
+
+select option {
+    color: #2c3e50;
+}
+
+.stats-bar {
+    display: flex;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.stat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #bdc3c7;
+    font-weight: 700;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Fredoka One', cursive;
+}
+
+.game-area {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.board {
+    width: 100%;
+    height: 100%;
+    background-color: var(--board-bg);
+    border: 12px solid var(--board-border);
+    border-radius: 12px;
+    position: relative;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.5), 0 10px 20px rgba(0,0,0,0.3);
+    /* Adding subtle wood grain using radial gradient */
+    background-image: repeating-radial-gradient(
+        circle at center,
+        transparent 0,
+        rgba(0,0,0,0.05) 2px,
+        transparent 4px
+    );
+    touch-action: none; /* Crucial for custom drag */
+}
+
+/* Internal grid lines drawn with background */
+.board::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: 
+        linear-gradient(var(--grid-line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+    background-size: calc(100% / 6) calc(100% / 6);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.exit-marker {
+    position: absolute;
+    right: -12px; /* Pull into border */
+    top: calc(100% / 6 * 2); /* Row 2 */
+    height: calc(100% / 6);
+    width: 12px;
+    background-color: #34495e;
+    box-shadow: inset 2px 0 5px rgba(0,0,0,0.5);
+    z-index: 0;
+}
+
+.block {
+    position: absolute;
+    border-radius: 6px;
+    cursor: grab;
+    z-index: 2;
+    transition: transform 0.1s ease-out; /* Smooth snapping */
+    /* 3D wood block effect */
+    box-shadow: 
+        inset 2px 2px 5px rgba(255,255,255,0.4),
+        inset -2px -2px 5px rgba(0,0,0,0.3),
+        2px 4px 6px rgba(0,0,0,0.4);
+}
+
+.block.dragging {
+    cursor: grabbing;
+    z-index: 3;
+    transition: none; /* Disable transition during drag for 1:1 follow */
+    box-shadow: 
+        inset 2px 2px 5px rgba(255,255,255,0.4),
+        inset -2px -2px 5px rgba(0,0,0,0.3),
+        5px 10px 15px rgba(0,0,0,0.5);
+    transform: scale(1.02);
+}
+
+.block-normal {
+    background: linear-gradient(135deg, var(--block-normal-1), var(--block-normal-2));
+    /* Wood grain vertical or horizontal based on size would be nice, but simple gradient is okay */
+}
+
+.block-main {
+    background: linear-gradient(135deg, var(--block-main-1), var(--block-main-2));
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0 4px 0 rgba(0,0,0,0.2);
+    transition: transform 0.1s, box-shadow 0.1s, background-color 0.2s;
+}
+
+.btn:active {
+    transform: translateY(4px);
+    box-shadow: 0 0 0 rgba(0,0,0,0.2);
+}
+
+.btn:disabled {
+    background-color: var(--btn-disabled) !important;
+    cursor: not-allowed;
+    transform: translateY(4px);
+    box-shadow: 0 0 0 rgba(0,0,0,0.2);
+}
+
+.primary-btn {
+    background-color: var(--btn-primary);
+}
+
+.primary-btn:hover:not(:disabled) {
+    background-color: var(--btn-primary-hover);
+}
+
+.secondary-btn {
+    background-color: var(--btn-secondary);
+}
+
+.secondary-btn:hover:not(:disabled) {
+    background-color: var(--btn-secondary-hover);
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.3s;
+    backdrop-filter: blur(4px);
+}
+
+.modal.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-content {
+    background: var(--bg-color);
+    padding: 40px;
+    border-radius: 16px;
+    text-align: center;
+    border: 4px solid var(--btn-primary);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transform: scale(1);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.modal.hidden .modal-content {
+    transform: scale(0.8);
+}
+
+.modal h2 {
+    font-family: 'Fredoka One', cursive;
+    color: #f1c40f;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.modal p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}

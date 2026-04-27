@@ -1,0 +1,294 @@
+:root {
+    --bg-color: #f8fafc;
+    --text-color: #0f172a;
+    --cell-empty: #ffffff;
+    --grid-border: #94a3b8; /* Thin border between cells inside a cage */
+    --cage-border: #0f172a; /* Thick border for cages */
+    --primary-color: #3b82f6;
+    --primary-hover: #2563eb;
+    --secondary-color: #e2e8f0;
+    --secondary-hover: #cbd5e1;
+    --highlight: #dbeafe;
+    --error-bg: #fee2e2;
+    --error-color: #ef4444;
+    --hint-color: #16a34a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 15px;
+    gap: 15px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.timer {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.header-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+select {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--grid-border);
+    font-family: inherit;
+    font-size: 0.95rem;
+    outline: none;
+    background: white;
+}
+
+.btn-group {
+    display: flex;
+    gap: 8px;
+}
+
+.btn {
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: none;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: var(--primary-hover);
+}
+
+.secondary-btn {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.secondary-btn:hover {
+    background-color: var(--secondary-hover);
+}
+
+.outline-btn {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--grid-border);
+}
+
+.outline-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.game-area {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.grid {
+    display: grid;
+    background-color: var(--cage-border);
+    border: 3px solid var(--cage-border);
+    gap: 0; /* Important: no gap, borders handled manually */
+    max-width: 100%;
+    max-height: 100%;
+    aspect-ratio: 1 / 1;
+    width: 100%; /* Take full width up to max-height */
+}
+
+/* Make grid size responsive to height on landscape screens */
+@media (min-aspect-ratio: 1/1) {
+    .grid {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.cell {
+    background-color: var(--cell-empty);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1px dashed var(--grid-border); /* Default inner border */
+}
+
+/* Thicker borders for cages will be applied inline via JS */
+/* e.g., border-top: 3px solid var(--cage-border); */
+
+@media (max-width: 400px) {
+    .cell {
+        font-size: 1.2rem;
+    }
+}
+
+.cell.selected {
+    background-color: var(--highlight);
+}
+
+.cell.error-duplicate {
+    color: var(--error-color);
+    background-color: var(--error-bg);
+}
+
+.cell.error-cage {
+    background-color: #fef08a; /* Yellow warning for wrong cage sum */
+}
+
+.cell.hint {
+    color: var(--hint-color);
+    font-weight: 900;
+}
+
+.cage-label {
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    pointer-events: none;
+}
+
+@media (max-width: 400px) {
+    .cage-label {
+        font-size: 0.6rem;
+    }
+}
+
+/* Keypad */
+.keypad-container {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 5px;
+}
+
+.keypad {
+    display: grid;
+    gap: 8px;
+}
+
+.key {
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 0;
+    font-size: 1.2rem;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    color: var(--text-color);
+    cursor: pointer;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.1);
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.key:active {
+    transform: translateY(2px);
+    box-shadow: 0 0 0 rgba(0,0,0,0.1);
+}
+
+.action-key {
+    background-color: #cbd5e1;
+}
+
+/* Modals */
+.modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.modal.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    width: 90%;
+    max-width: 350px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.modal-content h2 {
+    color: var(--hint-color);
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
